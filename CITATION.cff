@@ -8,7 +8,7 @@ authors:
     alias: "aownown"
 repository-code: "https://github.com/aownown/ego2robot-repro"
 license: Apache-2.0
-version: 0.1.1
+version: 0.1.2
 date-released: 2026-10-22
 references:
   - type: article
