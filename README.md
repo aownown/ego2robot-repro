@@ -217,7 +217,7 @@ find tested variants and gives maintainers concrete evidence of real use.
 
 ## Project status
 
-Version [`0.1.3`](https://github.com/aownown/ego2robot-repro/releases/tag/v0.1.3) is a research reproduction. The most valuable next contributions
+Version [`0.1.4`](https://github.com/aownown/ego2robot-repro/releases/tag/v0.1.4) is a research reproduction. The most valuable next contributions
 are aligned sensor depth, world-space camera recovery, improved shadow removal,
 a second robot morphology, and validation on additional clips. See
 [`ROADMAP.md`](ROADMAP.md) and [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
