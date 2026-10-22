@@ -217,10 +217,18 @@ find tested variants and gives maintainers concrete evidence of real use.
 
 ## Project status
 
-Version [`0.1.2`](https://github.com/aownown/ego2robot-repro/releases/tag/v0.1.2) is a research reproduction. The most valuable next contributions
+Version [`0.1.3`](https://github.com/aownown/ego2robot-repro/releases/tag/v0.1.3) is a research reproduction. The most valuable next contributions
 are aligned sensor depth, world-space camera recovery, improved shadow removal,
 a second robot morphology, and validation on additional clips. See
 [`ROADMAP.md`](ROADMAP.md) and [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
+
+## Maintenance and releases
+
+Changes are recorded in [`CHANGELOG.md`](CHANGELOG.md). Release preparation and
+post-release checks are documented in [`docs/RELEASING.md`](docs/RELEASING.md).
+CPU CI validates repository contracts, Markdown links, release metadata, Python
+syntax, retarget behavior, and acceptance metadata. Dependabot checks the GitHub
+Actions used by CI each week.
 
 ## Citation and contact
 

@@ -13,6 +13,7 @@ Before opening a pull request, run:
 ```bash
 python3 tools/repo_check.py
 python3 tools/check_links.py
+python3 tools/check_release.py
 python3 -m compileall -q workflow test_data/_test1019/scripts
 bash tests/smoke.sh
 ```

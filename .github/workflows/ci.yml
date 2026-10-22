@@ -21,6 +21,8 @@ jobs:
         run: python tools/repo_check.py
       - name: Markdown links
         run: python tools/check_links.py
+      - name: Release consistency
+        run: python tools/check_release.py
       - name: Python syntax
         run: python -m compileall -q workflow test_data/_test1019/scripts tools
       - name: CPU smoke tests

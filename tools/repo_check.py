@@ -11,9 +11,9 @@ ROOT = Path(__file__).resolve().parents[1]
 ERRORS: list[str] = []
 
 required = [
-    "README.md", "LICENSE", "THIRD_PARTY.md", "DATA.md",
+    "README.md", "LICENSE", "THIRD_PARTY.md", "DATA.md", "CHANGELOG.md",
     "CITATION.cff", "workflow/sources.lock.json",
-    "workflow/DATA_CONTRACT.md",
+    "workflow/DATA_CONTRACT.md", "docs/RELEASING.md",
     "test_data/_test1019/reports/status.json",
 ]
 for rel in required:

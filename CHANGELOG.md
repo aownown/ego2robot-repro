@@ -6,6 +6,21 @@ for the corresponding GitHub Release.
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-10-22
+
+### Added
+
+- A release consistency checker that requires the citation version, README
+  version link, and newest dated changelog entry to agree.
+- A public release checklist covering validation, scope changes, publishing,
+  and post-release verification.
+- Weekly Dependabot checks for the GitHub Actions used by CI.
+
+### Changed
+
+- CI and contributor instructions now include the release consistency check.
+- Release-facing documentation now points to `0.1.3`.
+
 ## [0.1.2] - 2026-10-22
 
 ### Added
@@ -44,7 +59,8 @@ for the corresponding GitHub Release.
 - Pinned upstream sources, isolated runtime setup, data contracts, provenance,
   CPU checks, acceptance evidence, and representative result images.
 
-[Unreleased]: https://github.com/aownown/ego2robot-repro/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/aownown/ego2robot-repro/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/aownown/ego2robot-repro/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/aownown/ego2robot-repro/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/aownown/ego2robot-repro/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/aownown/ego2robot-repro/releases/tag/v0.1.0
