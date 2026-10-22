@@ -220,7 +220,7 @@ find tested variants and gives maintainers concrete evidence of real use.
 Version `0.1.0` is a research reproduction. The most valuable next contributions
 are aligned sensor depth, world-space camera recovery, improved shadow removal,
 a second robot morphology, and validation on additional clips. See
-[`ROADMAP.md`](ROADMAP.md) and [`workflow/note.md`](workflow/note.md).
+[`ROADMAP.md`](ROADMAP.md) and [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 
 ## Citation and contact
 
