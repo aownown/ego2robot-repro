@@ -70,23 +70,46 @@ data variants.
 4. Maintain documentation and triage public bug reports.
 5. Run review and validation automations on pre-release changes.
 
-## Long-form application paragraph
+## Official form draft
 
-Ego2Robot Open Reproduction is a public, Apache-2.0 engineering project that
-makes a six-stage ego-to-robot synthesis pipeline inspectable and runnable at
-research-lab scale. It converts a first-person human manipulation clip into
-camera-relative hand trajectories, gripper targets, cleaned backgrounds, and
-synchronized robot RGB, depth, and masks. The project pins upstream revisions,
-separates incompatible model environments, defines data contracts, preserves
-quality flags, and checks far more than process exit codes. A 450-frame
-acceptance run reached all six stages and exposed concrete integration issues,
-including duplicate hand detection, temporal gaps, inpainting ghosting,
-gripper-width clipping, and RGB-estimated versus sensor depth. As creator and
-maintainer, I designed the orchestration, adapters, IK and validation paths, and
-continue to review issues and documentation. I report usage only from public
-analytics rather than inferred adoption. Codex support would help maintain a
-reproducible open science tool, test contributor changes, improve multi-hardware
-compatibility, and extend the pipeline without hiding scientific limitations.
+All response fields below fit the 500-character limit enforced by the official
+form. Keep the name, ChatGPT email, and OpenAI Organization ID in the form
+itself; they are intentionally not committed to a public repository.
+
+| Field | Character count | Recommended English response |
+|---|---:|---|
+| Role | — | Primary maintainer (radio selection) |
+| GitHub username | — | `aownown` |
+| Repository URL | — | `https://github.com/aownown/ego2robot-repro` |
+| Interest | — | Select `Codex Security` and `Project API credits` |
+| Why this repository qualifies | 484 | This Apache-2.0 project makes ego-to-robot synthesis debuggable: six stages convert first-person RGB into camera-relative gripper targets and synchronized robot RGB, depth, and masks. v0.1.0, passing CI, contracts, provenance, and a 450-frame acceptance run expose integration failures instead of hiding them behind an exit code. It is newly public: 0 stars and 0 forks. Its value is a reproducible baseline and integration target for egocentric-vision and robot-learning researchers. |
+| How API credits would be used | 455 | API credits would automate maintenance: triage failures across seven runtimes; test path, NumPy/SciPy, timestamp, mask, and MANO compatibility; audit dependency and model-source changes; draft issue reproducers; maintain installation and data contracts; run pre-release security, link, and packaging checks; and test new robot or input adapters. The maintainer reviews and tests releases. Credits support software review and integration, not GPU training. |
+| Additional information | 438 | v0.1.0 was released publicly on 2026-10-22 and is maintained by its creator, aownown. It is independent from the paper authors. It covers one 450-frame camera-relative clip, with no claim to paper-scale data, VLA training, benchmarks, sensor-depth calibration, world recovery, or real-robot validation. Quality, scale, and world-recovery flags remain false. Data and weights are excluded; setup uses official or access-controlled sources. |
+
+The official form asks for Codex Security rationale indirectly through the
+interest selection and the additional-information field. The companion 497
+character rationale below can replace the additional-information response when
+security is the priority; it repeats provenance context to make the security
+claim self-contained.
+
+> The project clones third-party research code, builds seven Conda environments,
+> downloads checkpoints, runs subprocesses, and processes external videos and
+> annotations. Contributions could introduce command injection, unsafe URLs or
+> deserialization, credential leakage, or dependency drift. We pin revisions,
+> track licenses, scan secrets and paths, run CPU CI, and use read-only Actions
+> permissions. Codex Security would review PRs and setup changes for these
+> supply-chain and code-execution risks.
+
+Before submitting, check the live repository indicators. They were 0 stars and
+0 forks on 2026-10-22. If those numbers change, update the first response rather
+than retaining stale figures. The project has no package download metric and no
+third-party user survey, so the application must not invent one.
+
+Official links:
+
+- Form: https://openai.com/form/codex-for-oss/
+- Program guidance: https://developers.openai.com/codex/codex-for-oss
+- Program terms: https://developers.openai.com/codex/codex-for-oss-terms
 
 ## GitHub repository metadata
 
