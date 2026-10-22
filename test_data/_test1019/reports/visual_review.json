@@ -1,0 +1,25 @@
+{
+  "reviewed_Asia_Shanghai": "2026-10-19T16:43:05.907898+08:00",
+  "review_type": "sampled image review, not whole-video visual acceptance",
+  "contact_sheet_frames": [
+    0,
+    58,
+    150,
+    225,
+    325,
+    449
+  ],
+  "scene_depth_preview_frames_reviewed": [
+    0
+  ],
+  "contact_sheet": "not distributed with code",
+  "observations": [
+    "The sampled stages remain visually synchronized: hand pose, gripper targets, ARM masks, inpainted scene, robot rendering and final composite.",
+    "Visible hand/shadow ghosting and local blur remain in ProPainter backgrounds, including parts of the interaction area. These artifacts remain in the composite.",
+    "Robot rendering satisfies the configured quantitative constraints; physical scale and real scene object collisions have not been validated.",
+    "DA3 depth preview contains structured scene/hand depth. It is estimated from RGB, not measured sensor depth."
+  ],
+  "visual_quality_accepted": false,
+  "physical_scale_validated": false,
+  "world_trajectory_recovered": false
+}

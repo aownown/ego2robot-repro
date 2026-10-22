@@ -1,0 +1,7 @@
+# Base optimization / BMC environment, not the full HaMeR + SLAM + HMP stack.
+-r requirements-common.txt
+torchgeometry==0.1.2
+tensorboard
+motmetrics==1.4.0
+rdp==0.8
+configer @ https://codeload.github.com/nghorbani/configer/zip/8cd1e3e556d9697298907800a743e120be57ac36#sha256=7dd6c89a10b1c2b348b677db4decf20167c44505469339e1af031d799bd2b8c2

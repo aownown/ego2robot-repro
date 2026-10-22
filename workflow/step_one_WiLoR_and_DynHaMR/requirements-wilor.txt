@@ -1,0 +1,12 @@
+-r requirements-common.txt
+pytorch-lightning==2.5.1
+torchmetrics==1.3.2
+scikit-image==0.21.0
+timm==0.9.12
+ultralytics==8.1.34
+xtcocotools==1.14.3
+hydra-submitit-launcher
+hydra-colorlog
+pyrootutils
+rich
+webdataset

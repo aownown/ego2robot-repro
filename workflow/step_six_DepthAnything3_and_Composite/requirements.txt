@@ -1,0 +1,10 @@
+torch==2.10.0
+torchvision==0.25.0
+xformers==0.0.34
+numpy==1.26.4
+scipy==1.14.1
+opencv-python==4.10.0.84
+moviepy==1.0.3
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+PyYAML==6.0.2

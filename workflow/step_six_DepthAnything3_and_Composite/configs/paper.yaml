@@ -1,0 +1,13 @@
+# Ego2Robot Appendix A.4; paper does not specify the exact DA3 checkpoint.
+# DA3METRIC-LARGE is our preparation choice for calibrated monocular input.
+model: depth-anything/DA3METRIC-LARGE
+checkpoint: assets/DA3METRIC-LARGE
+scene_depth_unit: meter
+robot_depth_unit: meter
+pixel_grid: rgb
+depth_definition: optical_axis_z
+arm_body: always_overlay
+gripper: hide_if_scene_closer_and_outside_dilated_human_mask
+human_mask_dilate_kernel: [5, 5]
+human_mask_dilate_iterations: 1
+metric_conversion: mean_fx_fy_at_network_input_resolution_times_raw_depth_divided_by_300

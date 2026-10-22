@@ -1,0 +1,12 @@
+# Environment smoke-test example only. Final embodiment has not been selected.
+model_xml: repos/mujoco_menagerie/franka_emika_panda/scene.xml
+attachment_site: attachment_site
+robot_name: example_franka_emika_panda
+length_unit: meter
+# Must be supplied for real trajectory conversion; never silently guessed.
+kinematic_reach_m: null
+camera_from_world: null
+geometric_gripper_from_attachment_site: null
+left_right_scene_assembly: null
+gripper_geom_names: null
+home_qpos: null

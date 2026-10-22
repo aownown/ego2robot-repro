@@ -1,0 +1,26 @@
+# Explicit local choices for completing the pipeline; not a calibrated robot setup.
+robot: dual_franka_emika_panda
+model_xml: repos/mujoco_menagerie/franka_emika_panda/panda.xml
+search_radius_m: 0.8  # Local effective radius, NOT a measured maximum robot reach.
+tcp_in_hand_m: [0.0, 0.0, 0.1029]  # Midpoint of MJCF fingertip pad centers.
+# Columns: geometric approach X = hand Z; normal Y = hand X; jaw Z = hand Y.
+rotation_hand_from_gripper: [[0, 1, 0], [0, 0, 1], [1, 0, 0]]
+maximum_gripper_width_m: 0.08
+home_qpos: [0, 0, 0, -1.57079, 0, 1.57079, -0.7853, 0.04, 0.04]
+camera_world: OpenCV_X_right_Y_down_Z_forward
+base_rotation_convention: inward_horizontal_X_camera_up_Z_then_local_extrinsic_xyz_roll_pitch_yaw
+lateral_reach_multipliers: [0.4, 0.6, 0.8]
+forward_reach_multipliers: [-0.1, 0.1, 0.3]
+vertical_reach_multipliers: [0.2, 0.4]
+pitch_degrees: [30, 60]
+yaw_degrees: [-20, 20]
+roll_degrees: [0]
+minimum_camera_distance_m: 0.20
+maximum_trajectory_reach_ratio: 0.9
+minimum_trajectory_base_distance_m: 0.08
+keyframes_max: 8
+ik: {solver: quadprog, iterations: 100, tolerance: 0.00001}
+top_candidates_per_arm: 5
+tracking_position_limit_m: 0.05
+tracking_rotation_limit_deg: 15.0  # Local additional diagnostic threshold.
+collision_penetration_epsilon_m: 0.00001

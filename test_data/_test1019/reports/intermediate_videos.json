@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "videos_verified": 23,
+  "expected_frames": 450,
+  "expected_fps": 30,
+  "videos": [
+    {
+      "stage": "03_arm",
+      "path": "reports/outputs/03_arm/mask_overlay.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_arm",
+      "path": "reports/outputs/03_arm/mask_comparison.mp4",
+      "width": 3840,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_arm",
+      "path": "reports/outputs/03_arm/mask_binary.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "01_wilor",
+      "path": "reports/outputs/01_wilor/keypoints_preview.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_shadow",
+      "path": "reports/outputs/03_shadow/mask_overlay.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_shadow",
+      "path": "reports/outputs/03_shadow/mask_comparison.mp4",
+      "width": 3840,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_shadow",
+      "path": "reports/outputs/03_shadow/mask_binary.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "01_dynhamr",
+      "path": "reports/outputs/01_dynhamr/comparison.mp4",
+      "width": 2560,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "01_dynhamr",
+      "path": "reports/outputs/01_dynhamr/hand_pose_overlay.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "02_targets",
+      "path": "reports/outputs/02_targets/comparison.mp4",
+      "width": 2560,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "02_targets",
+      "path": "reports/outputs/02_targets/retarget_overlay.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_prepared",
+      "path": "reports/outputs/03_prepared/arm_vs_arm_shadow.mp4",
+      "width": 2560,
+      "height": 784,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_prepared",
+      "path": "reports/outputs/03_prepared/mask_overlay.mp4",
+      "width": 1280,
+      "height": 784,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "03_prepared",
+      "path": "reports/outputs/03_prepared/mask_binary.mp4",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "04_inpaint",
+      "path": "reports/outputs/04_inpaint/comparison.mp4",
+      "width": 1280,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "04_inpaint",
+      "path": "reports/outputs/04_inpaint/rgb/masked_in.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "04_inpaint",
+      "path": "reports/outputs/04_inpaint/rgb/inpaint_out.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/robot_overlay.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/comparison.mp4",
+      "width": 1280,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/robot_rgb.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/robot_mask.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/gripper_mask.mp4",
+      "width": 640,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    },
+    {
+      "stage": "05_robot",
+      "path": "reports/outputs/05_robot/robot_depth_preview.mp4",
+      "width": 752,
+      "height": 360,
+      "avg_frame_rate": "30/1",
+      "nb_read_frames": "450",
+      "status": "passed"
+    }
+  ]
+}

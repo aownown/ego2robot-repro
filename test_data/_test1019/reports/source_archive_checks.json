@@ -1,0 +1,26 @@
+[
+  {
+    "name": "chumpy",
+    "commit": "580566eafc9ac68b2614b64d6f7aaa84eebb70da",
+    "url": "https://codeload.github.com/mattloper/chumpy/zip/580566eafc9ac68b2614b64d6f7aaa84eebb70da",
+    "path": "$TEST_ROOT/cache/sources/chumpy-580566eafc9ac68b2614b64d6f7aaa84eebb70da.zip",
+    "sha256": "b668f0bd571bc8ccc0b09ebc696b52689949b3be3e893b3fa5cd27a8956cb10e",
+    "seconds": 2.2
+  },
+  {
+    "name": "configer",
+    "commit": "8cd1e3e556d9697298907800a743e120be57ac36",
+    "url": "https://codeload.github.com/nghorbani/configer/zip/8cd1e3e556d9697298907800a743e120be57ac36",
+    "path": "$TEST_ROOT/cache/sources/configer-8cd1e3e556d9697298907800a743e120be57ac36.zip",
+    "sha256": "7dd6c89a10b1c2b348b677db4decf20167c44505469339e1af031d799bd2b8c2",
+    "seconds": 0.8
+  },
+  {
+    "name": "MANO",
+    "commit": "5869ab059c1bf31cc724f57eaf93e041135e8960",
+    "url": "https://codeload.github.com/otaheri/MANO/zip/5869ab059c1bf31cc724f57eaf93e041135e8960",
+    "path": "$TEST_ROOT/cache/sources/MANO-5869ab059c1bf31cc724f57eaf93e041135e8960.zip",
+    "sha256": "339525663f6a574997cd4e51ccb83c01052c30a4f16261323237a2c1403bfcc8",
+    "seconds": 11.4
+  }
+]

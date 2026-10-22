@@ -1,0 +1,16 @@
+# Ego2Robot Appendix A.4. Read by src/segment_video.py at runtime.
+model: sam3
+checkpoint: assets/sam3/sam3.pt
+prompt: person
+anchor: middle_frame
+propagation_direction: both
+chunk_frames: 400
+overlap_frames: 50
+overlap_merge: bitwise_or
+postprocess:
+  interpolate_gaps_max_frames: 3
+  area_median_window: 11
+  minimum_area_ratio: 0.5
+  small_area_fallback: nearest_valid
+  close_kernel: [5, 5]
+  close_shape: ellipse

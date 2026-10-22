@@ -1,0 +1,9 @@
+# Ego2Robot Eq. 3 and Appendix A.3. Parameter record, not a runtime override.
+input_frame: rgb_camera
+length_unit: meter
+keypoint_order: mano_openpose_21
+virtual_fingertip: {index_tip_weight: 0.7, middle_tip_weight: 0.3}
+minimum_orientation_width_m: 0.01
+velocity_filter: {rounds: 2, median_multiplier: 5, position_floor_m_per_s: 0.9, rotation_floor_rad_per_s: 10.0}
+position_width_savgol: {max_window: 21, max_polyorder: 3}
+orientation_slerp: {sigma_frames: 10, kernel_size: 21, hemisphere_correction: true}

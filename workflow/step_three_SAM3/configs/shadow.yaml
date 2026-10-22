@@ -1,0 +1,18 @@
+# Local experiment: semantic shadow candidates, not paper settings or ground truth.
+model: sam3
+checkpoint: assets/sam3/sam3.pt
+prompt: shadow
+anchor: middle_frame
+propagation_direction: both
+chunk_frames: 400
+overlap_frames: 50
+overlap_merge: bitwise_or
+postprocess:
+  # A shadow may legitimately disappear. Keep empty predictions empty.
+  interpolate_gaps_max_frames: 0
+  # With a 1-frame median, neither zero nor nonzero masks trigger area replacement.
+  area_median_window: 1
+  minimum_area_ratio: 0.5
+  small_area_fallback: nearest_valid
+  close_kernel: [1, 1]
+  close_shape: ellipse

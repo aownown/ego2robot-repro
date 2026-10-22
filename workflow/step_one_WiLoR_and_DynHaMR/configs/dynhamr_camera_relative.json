@@ -1,0 +1,29 @@
+{
+  "profile": "ego2robot_a1_local_adaptation_v1",
+  "note": "Local starting weights, not published Ego2Robot hyperparameters. Uses upstream Dyn-HaMR MANO, scene, RootOptimizer/SmoothOptimizer and BMC, with an explicit camera-relative A.1 loss adapter.",
+  "root_iterations": 30,
+  "smooth_iterations": 100,
+  "lbfgs_max_iter": 10,
+  "lr": 1.0,
+  "max_initial_gap_frames": 10,
+  "depth_min_m": 0.05,
+  "depth_max_m": 0.4,
+  "depth_target": "wrist",
+  "scales": {
+    "data_2d_px": 10.0,
+    "data_3d_m": 0.01,
+    "wrist_acceleration_m_per_frame2": 0.003,
+    "finger_rotation_acceleration": 0.1,
+    "depth_m": 0.01
+  },
+  "weights": {
+    "data_2d": 1.0,
+    "data_3d": 1.0,
+    "pose_data": 0.1,
+    "shape_data": 0.01,
+    "wrist_acceleration": 1.0,
+    "finger_acceleration": 0.2,
+    "bio": 0.1,
+    "depth": 100.0
+  }
+}

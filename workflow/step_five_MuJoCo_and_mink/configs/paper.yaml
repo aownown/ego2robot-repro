@@ -1,0 +1,17 @@
+# Ego2Robot Appendix A.4; search-grid record, not a completed base-search runner.
+candidate_frame: rgb_camera
+length_unit: meter
+lateral_reach_multipliers: [0.3, 0.4, 0.5, 0.6, 0.8, 1.0, 1.2]
+forward_reach_multipliers: [-0.1, 0.0, 0.1, 0.3, 0.5, 0.7, 0.9]
+vertical_reach_multipliers: [0.4, 0.2, 0.0, -0.2, -0.4]
+pitch_degrees: [30, 45, 60]
+yaw_degrees: [-45, -20, 0, 20, 45]
+roll_degrees: [-15, 0, 15]
+minimum_camera_distance_m: 0.20
+maximum_trajectory_reach_ratio: 0.9
+minimum_trajectory_base_distance_m: 0.08
+score: feasibility_rate_minus_5_times_abs_mean_reach_ratio_minus_0_65
+keyframes_max: 20
+ik: {solver: quadprog, iterations: 100, tolerance: 0.00001}
+top_candidates_per_arm: 5
+joint_combinations: 25

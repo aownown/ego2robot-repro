@@ -1,0 +1,10 @@
+# Ego2Robot Appendix A.4; defaults are applied in run.sh.
+fp16: true
+neighbor_length: 10
+ref_stride: 10
+subvideo_length: 80
+mask_dilation: 4
+raft_iter: 20
+# Our clip's rate, not a universal paper setting.
+save_fps: 30
+save_frames: true

@@ -1,0 +1,3412 @@
+{
+  "created_Asia_Shanghai": "2026-10-19T16:48:47.675462+08:00",
+  "project": "$PROJECT",
+  "test_root": "$TEST_ROOT",
+  "input_integrity": {
+    "checked_utc": "2026-10-19T07:52:36.564849Z",
+    "input_manifest": {
+      "schema": "litchi.rgbd_clip.v1",
+      "status": "succeeded",
+      "created_at_utc": "2026-09-10T08:54:56.721101+00:00",
+      "source_directory": "external_capture/litchi_data-nsl-extracted/camera_1_rgb_depth_001",
+      "source_video": "external_capture/litchi_data-nsl-extracted/camera_1_rgb_depth_001/rgb/rgb_mjpeg.mp4",
+      "clip": {
+        "time_basis": "source_mp4_constant_frame_rate",
+        "start_seconds_inclusive": 6,
+        "end_seconds_exclusive": 21,
+        "source_rgb_frame_start": 180,
+        "source_rgb_frame_end_exclusive": 630,
+        "frames": 450,
+        "first_rgb_header_timestamp_ns": 92636719000,
+        "last_rgb_header_timestamp_ns": 107621307000
+      },
+      "rgb_video": {
+        "codec_name": "mjpeg",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "duration": "15.000000",
+        "nb_read_frames": "450"
+      },
+      "rgb_jpegs_verified_against_source": true,
+      "video_packets_verified_against_source_jpegs": true,
+      "video_full_decode_passed": true,
+      "depth_matching": {
+        "method": "nearest_header_timestamp",
+        "max_allowed_delta_ns": 5000000
+      },
+      "depth_streams": {
+        "depth_original": {
+          "frames": 450,
+          "unique_source_frames": 450,
+          "source_frame_first": 180,
+          "source_frame_last": 629,
+          "shape_per_frame": [
+            480,
+            848
+          ],
+          "dtype": "uint16",
+          "npz_array_key": "depth",
+          "chunk_frames": [
+            120,
+            120,
+            120,
+            90
+          ],
+          "median_depth_minus_rgb_timestamp_ns": 147000.0,
+          "max_absolute_depth_minus_rgb_timestamp_ns": 266000,
+          "sha256_selected_raw_values": "c7082ba7f64e870a5fb895a261d3784a8c58d22206518d7788375642c33f7bcc",
+          "all_values_verified_equal_to_source": true
+        },
+        "depth_nsl": {
+          "frames": 450,
+          "unique_source_frames": 450,
+          "source_frame_first": 180,
+          "source_frame_last": 629,
+          "shape_per_frame": [
+            480,
+            848
+          ],
+          "dtype": "uint16",
+          "npz_array_key": "depth",
+          "chunk_frames": [
+            120,
+            120,
+            120,
+            90
+          ],
+          "median_depth_minus_rgb_timestamp_ns": 147000.0,
+          "max_absolute_depth_minus_rgb_timestamp_ns": 266000,
+          "sha256_selected_raw_values": "042a27c824ca4d36c004c760afc6cf6162e72d9c00624c3a7e10afcc20c7bacd",
+          "all_values_verified_equal_to_source": true
+        }
+      },
+      "depth_units": "unconfirmed raw sensor/disparity units; no conversion applied",
+      "depth_aligned_to_rgb": false,
+      "camera_parameters_copied_verbatim": true,
+      "camera_parameters_sha256": "606ef353559b0a99bb0f7de5a16bf29c0bfef63e87a2d5438724cbbb2c20b707",
+      "numpy_version": "2.4.4"
+    },
+    "sha256_returncode": 0,
+    "sha256_entries": 468,
+    "environment_initial": {
+      "os": "NAME=\"Ubuntu\"\nVERSION=\"20.04.6 LTS (Focal Fossa)\"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME=\"Ubuntu 20.04.6 LTS\"\nVERSION_ID=\"20.04\"\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nVERSION_CODENAME=focal\nUBUNTU_CODENAME=focal\n",
+      "gpu": "index, name, driver_version, memory.total [MiB]\n0, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n1, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n2, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n3, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n4, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n5, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n6, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n7, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n"
+    }
+  },
+  "graphics": {
+    "backend": "EGL",
+    "vendor": "Mesa/X.org",
+    "renderer": "llvmpipe (LLVM 12.0.0, 256 bits)",
+    "gl_version": "3.1 Mesa 21.2.6",
+    "rgb_shape": [
+      96,
+      128,
+      3
+    ],
+    "rgb_max": 255,
+    "mujoco_version": "3.10.0"
+  },
+  "paths": {
+    "03_arm": "reports/outputs/03_arm",
+    "01_wilor": "reports/outputs/01_wilor",
+    "01_hand_masks": "reports/outputs/01_hand_masks",
+    "03_shadow": "reports/outputs/03_shadow",
+    "01_track": "reports/outputs/01_track",
+    "01_dynhamr": "reports/outputs/01_dynhamr",
+    "02_targets": "reports/outputs/02_targets",
+    "03_prepared": "reports/outputs/03_prepared",
+    "04_inpaint": "reports/outputs/04_inpaint",
+    "05_robot": "reports/outputs/05_robot",
+    "06_composite": "reports/outputs/06_composite"
+  },
+  "execution_records": {
+    "01_wilor.ok.json": {
+      "stage": "01_wilor",
+      "started": "2026-10-19T16:19:22.686045+08:00",
+      "argv": [
+        "workflow/step_one_WiLoR_and_DynHaMR/envs/wilor/bin/python",
+        "-u",
+        "workflow/step_one_WiLoR_and_DynHaMR/src/export_wilor.py",
+        "--clip",
+        "$CLIP",
+        "--output",
+        "reports/outputs/01_wilor"
+      ],
+      "output": "reports/outputs/01_wilor",
+      "log": "reports/logs/01_wilor_161922.log",
+      "finished": "2026-10-19T16:20:53.653568+08:00",
+      "returncode": 0
+    },
+    "03_arm.ok.json": {
+      "stage": "03_arm",
+      "started": "2026-10-19T16:19:07.685207+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_three_SAM3/run_segment.sh",
+        "--clip",
+        "$CLIP",
+        "--config",
+        "workflow/step_three_SAM3/configs/arm.yaml",
+        "--output",
+        "reports/outputs/03_arm"
+      ],
+      "output": "reports/outputs/03_arm",
+      "log": "reports/logs/03_arm_161907.log",
+      "finished": "2026-10-19T16:21:34.571792+08:00",
+      "returncode": 0
+    },
+    "01_hand_masks.ok.json": {
+      "stage": "01_hand_masks",
+      "started": "2026-10-19T16:20:53.655890+08:00",
+      "argv": [
+        "workflow/step_three_SAM3/envs/sam3/bin/python",
+        "-u",
+        "workflow/step_one_WiLoR_and_DynHaMR/src/sam3_hand_masks.py",
+        "--input",
+        "reports/outputs/01_wilor",
+        "--output",
+        "reports/outputs/01_hand_masks"
+      ],
+      "output": "reports/outputs/01_hand_masks",
+      "log": "reports/logs/01_hand_masks_162053.log",
+      "finished": "2026-10-19T16:21:52.287367+08:00",
+      "returncode": 0
+    },
+    "01_track.ok.json": {
+      "stage": "01_track",
+      "started": "2026-10-19T16:21:52.289993+08:00",
+      "argv": [
+        "workflow/step_one_WiLoR_and_DynHaMR/envs/wilor/bin/python",
+        "-u",
+        "workflow/step_one_WiLoR_and_DynHaMR/src/track_wilor.py",
+        "--input",
+        "reports/outputs/01_wilor",
+        "--hand-masks",
+        "reports/outputs/01_hand_masks",
+        "--output",
+        "reports/outputs/01_track"
+      ],
+      "output": "reports/outputs/01_track",
+      "log": "reports/logs/01_track_162152.log",
+      "finished": "2026-10-19T16:21:55.385762+08:00",
+      "returncode": 0
+    },
+    "01_dynhamr.ok.json": {
+      "stage": "01_dynhamr",
+      "started": "2026-10-19T16:21:55.388629+08:00",
+      "argv": [
+        "workflow/step_one_WiLoR_and_DynHaMR/envs/dynhamr/bin/python",
+        "-u",
+        "workflow/step_one_WiLoR_and_DynHaMR/src/refine_dynhamr.py",
+        "--input",
+        "reports/outputs/01_track",
+        "--output",
+        "reports/outputs/01_dynhamr",
+        "--config",
+        "workflow/step_one_WiLoR_and_DynHaMR/configs/dynhamr_camera_relative.json"
+      ],
+      "output": "reports/outputs/01_dynhamr",
+      "log": "reports/logs/01_dynhamr_162155.log",
+      "finished": "2026-10-19T16:23:02.671339+08:00",
+      "returncode": 0
+    },
+    "02_targets.ok.json": {
+      "stage": "02_targets",
+      "started": "2026-10-19T16:23:02.674056+08:00",
+      "argv": [
+        "workflow/step_two_Retarget_and_Smooth/envs/retarget/bin/python",
+        "-u",
+        "workflow/step_two_Retarget_and_Smooth/src/run_retarget.py",
+        "--input",
+        "reports/outputs/01_dynhamr",
+        "--clip",
+        "$CLIP",
+        "--output",
+        "reports/outputs/02_targets"
+      ],
+      "output": "reports/outputs/02_targets",
+      "log": "reports/logs/02_targets_162302.log",
+      "finished": "2026-10-19T16:23:25.046507+08:00",
+      "returncode": 0
+    },
+    "03_shadow.ok.json": {
+      "stage": "03_shadow",
+      "started": "2026-10-19T16:21:34.574499+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_three_SAM3/run_segment.sh",
+        "--clip",
+        "$CLIP",
+        "--config",
+        "workflow/step_three_SAM3/configs/shadow.yaml",
+        "--output",
+        "reports/outputs/03_shadow"
+      ],
+      "output": "reports/outputs/03_shadow",
+      "log": "reports/logs/03_shadow_162134.log",
+      "finished": "2026-10-19T16:24:07.139348+08:00",
+      "returncode": 0
+    },
+    "03_prepared.ok.json": {
+      "stage": "03_prepared",
+      "started": "2026-10-19T16:24:07.142334+08:00",
+      "argv": [
+        "workflow/step_three_SAM3/envs/sam3/bin/python",
+        "-u",
+        "workflow/step_three_SAM3/src/merge_shadow_masks.py",
+        "--arm-run",
+        "reports/outputs/03_arm",
+        "--shadow-run",
+        "reports/outputs/03_shadow",
+        "--output",
+        "reports/outputs/03_prepared"
+      ],
+      "output": "reports/outputs/03_prepared",
+      "log": "reports/logs/03_prepared_162407.log",
+      "finished": "2026-10-19T16:24:53.752628+08:00",
+      "returncode": 0
+    },
+    "04_inpaint.ok.json": {
+      "stage": "04_inpaint",
+      "started": "2026-10-19T16:24:53.756099+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_four_ProPainter/run_full.sh",
+        "reports/outputs/04_inpaint",
+        "reports/outputs/03_prepared"
+      ],
+      "output": "reports/outputs/04_inpaint",
+      "log": "reports/logs/04_inpaint_162453.log",
+      "finished": "2026-10-19T16:26:23.219806+08:00",
+      "returncode": 0
+    },
+    "05_robot.ok.json": {
+      "stage": "05_robot",
+      "started": "2026-10-19T16:26:23.222501+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_five_MuJoCo_and_mink/run.sh",
+        "--targets",
+        "reports/outputs/02_targets",
+        "--background",
+        "reports/outputs/04_inpaint",
+        "--config",
+        "workflow/step_five_MuJoCo_and_mink/configs/panda_production.yaml",
+        "--workers",
+        "8",
+        "--output",
+        "reports/outputs/05_robot"
+      ],
+      "output": "reports/outputs/05_robot",
+      "log": "reports/logs/05_robot_162623.log",
+      "finished": "2026-10-19T16:32:31.443390+08:00",
+      "returncode": 0
+    },
+    "05_validate.ok.json": {
+      "stage": "05_validate",
+      "started": "2026-10-19T16:32:31.444934+08:00",
+      "argv": [
+        "workflow/step_five_MuJoCo_and_mink/envs/mujoco_mink/bin/python",
+        "workflow/step_five_MuJoCo_and_mink/src/check_production.py",
+        "--output",
+        "reports/outputs/05_robot"
+      ],
+      "output": null,
+      "log": "reports/logs/05_validate_163231.log",
+      "finished": "2026-10-19T16:32:40.274411+08:00",
+      "returncode": 0
+    },
+    "06_input_check.ok.json": {
+      "stage": "06_input_check",
+      "started": "2026-10-19T16:32:40.276983+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_six_DepthAnything3_and_Composite/run.sh",
+        "--robot",
+        "reports/outputs/05_robot",
+        "--clip",
+        "$CLIP",
+        "--check-inputs"
+      ],
+      "output": null,
+      "log": "reports/logs/06_input_check_163240.log",
+      "finished": "2026-10-19T16:32:52.505610+08:00",
+      "returncode": 0
+    },
+    "06_composite.ok.json": {
+      "stage": "06_composite",
+      "started": "2026-10-19T16:32:52.508319+08:00",
+      "argv": [
+        "bash",
+        "workflow/step_six_DepthAnything3_and_Composite/run.sh",
+        "--robot",
+        "reports/outputs/05_robot",
+        "--clip",
+        "$CLIP",
+        "--checkpoint",
+        "workflow/step_six_DepthAnything3_and_Composite/assets/DA3METRIC-LARGE",
+        "--output",
+        "reports/outputs/06_composite"
+      ],
+      "output": "reports/outputs/06_composite",
+      "log": "reports/logs/06_composite_163252.log",
+      "finished": "2026-10-19T16:34:52.814050+08:00",
+      "returncode": 0
+    },
+    "06_validate.ok.json": {
+      "stage": "06_validate",
+      "started": "2026-10-19T16:34:52.815963+08:00",
+      "argv": [
+        "workflow/step_six_DepthAnything3_and_Composite/envs/da3/bin/python",
+        "workflow/step_six_DepthAnything3_and_Composite/src/check_pipeline.py",
+        "--output",
+        "reports/outputs/06_composite"
+      ],
+      "output": null,
+      "log": "reports/logs/06_validate_163452.log",
+      "finished": "2026-10-19T16:35:19.268614+08:00",
+      "returncode": 0
+    },
+    "06_depth_scale.ok.json": {
+      "stage": "06_depth_scale",
+      "started": "2026-10-19T16:35:19.270481+08:00",
+      "argv": [
+        "workflow/step_six_DepthAnything3_and_Composite/envs/da3/bin/python",
+        "workflow/step_six_DepthAnything3_and_Composite/src/inspect_depth_scale.py",
+        "--output",
+        "reports/outputs/06_composite"
+      ],
+      "output": null,
+      "log": "reports/logs/06_depth_scale_163519.log",
+      "finished": "2026-10-19T16:35:45.823150+08:00",
+      "returncode": 0
+    }
+  },
+  "stage_results": {
+    "03_arm": {
+      "summary.json": {
+        "schema": "pkdata.sam3.person_masks.v1",
+        "status": "succeeded",
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "fps": 30.0,
+        "resolution_wh": [
+          1280,
+          720
+        ],
+        "prompt": "arm",
+        "chunk_count": 2,
+        "chunks": [
+          {
+            "chunk_index": 0,
+            "start_row": 0,
+            "end_row_exclusive": 400,
+            "start_frame": 0,
+            "end_frame_exclusive": 400,
+            "anchor_frame": 200,
+            "anchor_local": 200,
+            "status": "succeeded",
+            "frames": 400,
+            "elapsed_seconds": 66.46056216396391
+          },
+          {
+            "chunk_index": 1,
+            "start_row": 350,
+            "end_row_exclusive": 450,
+            "start_frame": 350,
+            "end_frame_exclusive": 450,
+            "anchor_frame": 400,
+            "anchor_local": 50,
+            "status": "succeeded",
+            "frames": 100,
+            "elapsed_seconds": 15.727949765045196
+          }
+        ],
+        "overlap_frames": [
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399
+        ],
+        "raw_empty_mask_frames": [],
+        "gap_interpolated_frames": [],
+        "small_area_replaced_frames": [],
+        "empty_mask_frames": [],
+        "area_fraction_min_max": [
+          0.15044596354166667,
+          0.184638671875
+        ],
+        "final_mask_count": 450,
+        "device": {
+          "torch": "2.10.0+cu128",
+          "cuda": "12.8",
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "peak_allocated_gib": 9.622232913970947
+        },
+        "visual_quality_review": "pending; numerical completion does not verify arm coverage or object preservation",
+        "purpose": "A.4 person/arm removal masks for ProPainter; distinct from A.1 hand detection gate"
+      },
+      "validation.json": {
+        "structural_checks_passed": true,
+        "binary_png_roundtrip_passed": true,
+        "chunk_coverage_passed": true,
+        "frame_alignment_passed": true,
+        "videos": {
+          "mask_overlay.mp4": {
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          },
+          "mask_comparison.mp4": {
+            "width": 3840,
+            "height": 720,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          }
+        },
+        "visual_quality_review": "pending"
+      },
+      "run.json": {
+        "schema": "pkdata.sam3.person_masks.run.v1",
+        "status": "succeeded",
+        "output": "reports/outputs/03_arm",
+        "clip": "$CLIP",
+        "requested_frames": 450,
+        "complete_clip": true,
+        "prompt": "arm",
+        "completed_chunks": 2,
+        "chunks": [
+          {
+            "chunk_index": 0,
+            "start_row": 0,
+            "end_row_exclusive": 400,
+            "start_frame": 0,
+            "end_frame_exclusive": 400,
+            "anchor_frame": 200,
+            "anchor_local": 200,
+            "status": "succeeded",
+            "frames": 400,
+            "elapsed_seconds": 66.46056216396391
+          },
+          {
+            "chunk_index": 1,
+            "start_row": 350,
+            "end_row_exclusive": 450,
+            "start_frame": 350,
+            "end_frame_exclusive": 450,
+            "anchor_frame": 400,
+            "anchor_local": 50,
+            "status": "succeeded",
+            "frames": 100,
+            "elapsed_seconds": 15.727949765045196
+          }
+        ],
+        "frames_processed": 450,
+        "empty_mask_frames": [],
+        "elapsed_seconds": 145.70523436926305
+      }
+    },
+    "01_wilor": {
+      "summary.json": {
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "total_detections": 918,
+        "zero_detection_frames": [],
+        "missing_left_frames": [],
+        "missing_right_frames": [],
+        "duplicate_handedness_frames": [
+          221,
+          224,
+          225,
+          226,
+          227,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          239,
+          241,
+          242,
+          325,
+          328,
+          355,
+          361
+        ],
+        "invalid_translation_fits": 0,
+        "tracking_applied": false,
+        "dynhamr_applied": false
+      },
+      "run.json": {
+        "schema": "pkdata.wilor.detections.v1",
+        "status": "succeeded",
+        "input": "$CLIP",
+        "requested_frames": 450,
+        "available_frames": 450,
+        "fps": 30.0,
+        "K": [
+          [
+            692.82666015625,
+            0.0,
+            644.6431884765625
+          ],
+          [
+            0.0,
+            692.4537963867188,
+            365.76177978515625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "camera_frame": "OpenCV RGB camera: x right, y down, z forward",
+        "translation": "translation-only least squares fit to model-predicted 2D joints with calibrated K",
+        "metric_status": "MANO-scale monocular initialization; not depth-validated",
+        "distortion_applied": false,
+        "tracking_applied": false,
+        "dynhamr_applied": false,
+        "handedness": "0 left / 1 right; detection_id is local to each frame",
+        "mano_convention": "raw right-MANO canonical parameters; mirror output X for is_right=0",
+        "keypoint_order": "OpenPose21: wrist=0, thumb_tip=4, index_tip=8, middle_tip=12",
+        "args": {
+          "batch_size": 2,
+          "confidence": 0.3,
+          "rescale_factor": 2.0,
+          "fast": false
+        },
+        "code_sha256": {
+          "export_wilor.py": "a295ad3a68cdd0bc9f123708683c2955a8d2ed64563f74a2ef51181afcd24508",
+          "camera_init.py": "e19dca18370b6d4e7d8be56ee2561489eec56db6b25d94ce5a9a808daa0f71ad"
+        },
+        "wilor_revision": "fcb911312a38fa8badd30d9656a167485d61b8f9",
+        "demo_focal_px": 25000.0,
+        "processed_frames": 450
+      }
+    },
+    "01_hand_masks": {
+      "summary.json": {
+        "schema": "pkdata.sam3.hand_masks.v1",
+        "status": "succeeded",
+        "source": "reports/outputs/01_wilor",
+        "purpose": "A.1 hand candidate gating; not A.4 person/arm removal masks",
+        "prompt": "hand",
+        "confidence_threshold": 0.5,
+        "outside_fraction_threshold": 0.8,
+        "method": "Independent per-frame SAM3 image text segmentation; union of all hand masks",
+        "precision": "bfloat16 autocast",
+        "checkpoint": "workflow/step_three_SAM3/assets/sam3/sam3.pt",
+        "sam3_revision": "660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7",
+        "code_sha256": "f8b48d982397f6f475aebe280d54797fd1a18ec7cffcf249c36f63caf308a823",
+        "requested_frames": 450,
+        "available_frames": 450,
+        "frames_processed": 450,
+        "complete_clip": true,
+        "total_candidates": 918,
+        "rejected_candidates": 0,
+        "rejected": [],
+        "empty_mask_frames": [],
+        "elapsed_seconds": 46.816703700926155
+      },
+      "run.json": {
+        "schema": "pkdata.sam3.hand_masks.v1",
+        "status": "succeeded",
+        "source": "reports/outputs/01_wilor",
+        "purpose": "A.1 hand candidate gating; not A.4 person/arm removal masks",
+        "prompt": "hand",
+        "confidence_threshold": 0.5,
+        "outside_fraction_threshold": 0.8,
+        "method": "Independent per-frame SAM3 image text segmentation; union of all hand masks",
+        "precision": "bfloat16 autocast",
+        "checkpoint": "workflow/step_three_SAM3/assets/sam3/sam3.pt",
+        "sam3_revision": "660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7",
+        "code_sha256": "f8b48d982397f6f475aebe280d54797fd1a18ec7cffcf249c36f63caf308a823",
+        "requested_frames": 450,
+        "available_frames": 450,
+        "frames_processed": 450,
+        "complete_clip": true,
+        "total_candidates": 918,
+        "rejected_candidates": 0,
+        "rejected": [],
+        "empty_mask_frames": [],
+        "elapsed_seconds": 46.816703700926155
+      }
+    },
+    "03_shadow": {
+      "summary.json": {
+        "schema": "pkdata.sam3.person_masks.v1",
+        "status": "succeeded",
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "fps": 30.0,
+        "resolution_wh": [
+          1280,
+          720
+        ],
+        "prompt": "shadow",
+        "chunk_count": 2,
+        "chunks": [
+          {
+            "chunk_index": 0,
+            "start_row": 0,
+            "end_row_exclusive": 400,
+            "start_frame": 0,
+            "end_frame_exclusive": 400,
+            "anchor_frame": 200,
+            "anchor_local": 200,
+            "status": "succeeded",
+            "frames": 400,
+            "elapsed_seconds": 75.70974406180903
+          },
+          {
+            "chunk_index": 1,
+            "start_row": 350,
+            "end_row_exclusive": 450,
+            "start_frame": 350,
+            "end_frame_exclusive": 450,
+            "anchor_frame": 400,
+            "anchor_local": 50,
+            "status": "succeeded",
+            "frames": 100,
+            "elapsed_seconds": 16.622773881070316
+          }
+        ],
+        "overlap_frames": [
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399
+        ],
+        "raw_empty_mask_frames": [],
+        "gap_interpolated_frames": [],
+        "small_area_replaced_frames": [],
+        "empty_mask_frames": [],
+        "area_fraction_min_max": [
+          0.00025065104166666665,
+          0.10620768229166666
+        ],
+        "final_mask_count": 450,
+        "device": {
+          "torch": "2.10.0+cu128",
+          "cuda": "12.8",
+          "gpu": "NVIDIA A100-SXM4-40GB",
+          "peak_allocated_gib": 9.970265865325928
+        },
+        "visual_quality_review": "pending; numerical completion does not verify arm coverage or object preservation",
+        "purpose": "A.4 person/arm removal masks for ProPainter; distinct from A.1 hand detection gate"
+      },
+      "validation.json": {
+        "structural_checks_passed": true,
+        "binary_png_roundtrip_passed": true,
+        "chunk_coverage_passed": true,
+        "frame_alignment_passed": true,
+        "videos": {
+          "mask_overlay.mp4": {
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          },
+          "mask_comparison.mp4": {
+            "width": 3840,
+            "height": 720,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          }
+        },
+        "visual_quality_review": "pending"
+      },
+      "run.json": {
+        "schema": "pkdata.sam3.person_masks.run.v1",
+        "status": "succeeded",
+        "output": "reports/outputs/03_shadow",
+        "clip": "$CLIP",
+        "requested_frames": 450,
+        "complete_clip": true,
+        "prompt": "shadow",
+        "completed_chunks": 2,
+        "chunks": [
+          {
+            "chunk_index": 0,
+            "start_row": 0,
+            "end_row_exclusive": 400,
+            "start_frame": 0,
+            "end_frame_exclusive": 400,
+            "anchor_frame": 200,
+            "anchor_local": 200,
+            "status": "succeeded",
+            "frames": 400,
+            "elapsed_seconds": 75.70974406180903
+          },
+          {
+            "chunk_index": 1,
+            "start_row": 350,
+            "end_row_exclusive": 450,
+            "start_frame": 350,
+            "end_frame_exclusive": 450,
+            "anchor_frame": 400,
+            "anchor_local": 50,
+            "status": "succeeded",
+            "frames": 100,
+            "elapsed_seconds": 16.622773881070316
+          }
+        ],
+        "frames_processed": 450,
+        "empty_mask_frames": [],
+        "elapsed_seconds": 151.50400663679466
+      }
+    },
+    "01_track": {
+      "summary.json": {
+        "schema": "pkdata.wilor.association.v1",
+        "source": "reports/outputs/01_wilor",
+        "frames": 450,
+        "seed_frame": 229,
+        "seed_combined_score": 1.7581406831741333,
+        "total_raw_detections": 918,
+        "selected_detections": 900,
+        "rejected_candidates": 18,
+        "tracks": {
+          "left": {
+            "associated_frames": 450,
+            "valid_after_jump_filter": 448,
+            "missing_frames": [],
+            "handedness_mismatch_frames": [],
+            "invalid_translation_frames": [],
+            "jump_frames": [
+              45,
+              144
+            ],
+            "jump_threshold_m_per_frame": 0.008852565599173592,
+            "wrist_depth_outside_paper_005_04_m": [
+              111,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              128,
+              129
+            ]
+          },
+          "right": {
+            "associated_frames": 450,
+            "valid_after_jump_filter": 445,
+            "missing_frames": [],
+            "handedness_mismatch_frames": [],
+            "invalid_translation_frames": [],
+            "jump_frames": [
+              14,
+              58,
+              59,
+              100,
+              155
+            ],
+            "jump_threshold_m_per_frame": 0.00916333840109167,
+            "wrist_depth_outside_paper_005_04_m": []
+          }
+        },
+        "tracking_applied": true,
+        "jump_filter_applied": true,
+        "sam3_mask_gate_applied": true,
+        "sam3_hand_masks": "reports/outputs/01_hand_masks",
+        "sam3_mask_rejected_candidates": 0,
+        "gap_filling_applied": false,
+        "dynhamr_applied": false,
+        "metric_depth_validated": false,
+        "note": "Initial pinhole tracks. Jump flags require review; no MANO parameters or depth values are clamped.",
+        "code_sha256": {
+          "track_wilor.py": "a4bb570135bea6391f2068bc5c7a0f1b1f3406fe206a58d38d4831b78c86ba4d",
+          "association.py": "365f41f2fbc79d7626ffffb739ca43c0cf48fc6da0d7c64aee3ccf54fead5932"
+        }
+      }
+    },
+    "01_dynhamr": {
+      "summary.json": {
+        "source": "reports/outputs/01_track",
+        "total_available_frames": 450,
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "frames": 450,
+        "complete_clip": true,
+        "gaps": {
+          "left": [
+            [
+              45,
+              46
+            ],
+            [
+              144,
+              145
+            ]
+          ],
+          "right": [
+            [
+              14,
+              15
+            ],
+            [
+              58,
+              60
+            ],
+            [
+              100,
+              101
+            ],
+            [
+              155,
+              156
+            ]
+          ]
+        },
+        "K": [
+          [
+            692.82666015625,
+            0.0,
+            644.6431884765625
+          ],
+          [
+            0.0,
+            692.4537963867188,
+            365.76177978515625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "coordinate_frame": "OpenCV RGB camera-relative proxy, not a recovered world frame",
+        "camera_motion_estimated": false,
+        "sam3_mask_gate_applied": true,
+        "translation_convention": "DynHaMR pre-mirror translation: negate left X relative to WiLoR pinhole translation",
+        "schema": "pkdata.dynhamr.camera_relative.v1",
+        "status": "succeeded",
+        "profile": "ego2robot_a1_local_adaptation_v1",
+        "upstream_revision": "fa9cd7412c205fd15ee4139c8caacf79bf6167e6",
+        "exact_paper_reproduction": false,
+        "world_trajectory_recovered": false,
+        "metric_depth_validated": false,
+        "hmp_applied": false,
+        "depth_constraint_type": "soft penalty",
+        "depth_target": "wrist",
+        "initial_gap_interpolation": true,
+        "final_gap_interpolation": false,
+        "loss_implementation": "Local A.1 adapter with recorded weights; upstream MANO, scene, stage parameter sets, LBFGS and BMC",
+        "code_sha256": {
+          "refine_dynhamr.py": "e852f12b7d8cc91a792a2c34057f66d51e7cd47d4a79b794f13111631bdaeadf",
+          "dynhamr_adapter.py": "6f6bc4bc50bf4fe5335d1dc3994f93b687a3a402eb565bf76b50fd9ad63e830e",
+          "dynhamr_a1_loss.py": "d18dcb125fc09ee29d21883ba869683217c6e6cd06021e4626013b7cdc30929e"
+        },
+        "dynhamr_applied": true,
+        "frames_optimized": 450,
+        "all_outputs_finite": true,
+        "mano_mapping": {
+          "left": {
+            "compared_frames": 450,
+            "max_abs_joint_error_m": 7.450580596923828e-08
+          },
+          "right": {
+            "compared_frames": 450,
+            "max_abs_joint_error_m": 7.078051567077637e-08
+          },
+          "upstream_translation_max_error_m": 2.9802322387695312e-08
+        },
+        "phases": {
+          "root_fit": {
+            "initial_loss": 0.9317265152931213,
+            "requested_iterations": 30,
+            "final_loss": 0.14269182085990906,
+            "completed_iterations": 30
+          },
+          "smooth_fit": {
+            "initial_loss": 0.16975006461143494,
+            "requested_iterations": 100,
+            "final_loss": 0.10627494752407074,
+            "completed_iterations": 100
+          }
+        },
+        "metrics": {
+          "left": {
+            "wilor": {
+              "reprojection_rmse_px": 10.532205312537627,
+              "wrist_acceleration_rms_m_per_frame2": 0.00426334235817194,
+              "wrist_step_max_m": 0.01212820690125227,
+              "wrist_change_from_wilor_rms_m": 0.0,
+              "joint_depth_min_m": 0.26318252086639404,
+              "joint_depth_max_m": 0.4643317461013794,
+              "wrist_depth_min_m": 0.3079913556575775,
+              "wrist_depth_max_m": 0.40507006645202637,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [
+                111,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                128,
+                129
+              ],
+              "depth_violation_max_m": 0.00507006049156189
+            },
+            "shared_shape_initialization": {
+              "reprojection_rmse_px": 10.532606209345138,
+              "wrist_acceleration_rms_m_per_frame2": 0.004212115425616503,
+              "wrist_step_max_m": 0.00870570819824934,
+              "wrist_change_from_wilor_rms_m": 6.576885061804205e-05,
+              "joint_depth_min_m": 0.26314494013786316,
+              "joint_depth_max_m": 0.46428051590919495,
+              "wrist_depth_min_m": 0.307989239692688,
+              "wrist_depth_max_m": 0.40507155656814575,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [
+                111,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                128,
+                129
+              ],
+              "depth_violation_max_m": 0.005071550607681274
+            },
+            "optimized": {
+              "reprojection_rmse_px": 5.2749826789449275,
+              "wrist_acceleration_rms_m_per_frame2": 0.00026666451594792306,
+              "wrist_step_max_m": 0.004615785088390112,
+              "wrist_change_from_wilor_rms_m": 0.0035649894271045923,
+              "joint_depth_min_m": 0.26744478940963745,
+              "joint_depth_max_m": 0.46060970425605774,
+              "wrist_depth_min_m": 0.30704525113105774,
+              "wrist_depth_max_m": 0.3999919593334198,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            }
+          },
+          "right": {
+            "wilor": {
+              "reprojection_rmse_px": 14.082819313103968,
+              "wrist_acceleration_rms_m_per_frame2": 0.004722821991890669,
+              "wrist_step_max_m": 0.01459331065416336,
+              "wrist_change_from_wilor_rms_m": 0.0,
+              "joint_depth_min_m": 0.2761625647544861,
+              "joint_depth_max_m": 0.42853522300720215,
+              "wrist_depth_min_m": 0.3102785348892212,
+              "wrist_depth_max_m": 0.3730895519256592,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            },
+            "shared_shape_initialization": {
+              "reprojection_rmse_px": 14.08343521520544,
+              "wrist_acceleration_rms_m_per_frame2": 0.004397246986627579,
+              "wrist_step_max_m": 0.008517984300851822,
+              "wrist_change_from_wilor_rms_m": 7.687632023589686e-05,
+              "joint_depth_min_m": 0.27618157863616943,
+              "joint_depth_max_m": 0.4287393093109131,
+              "wrist_depth_min_m": 0.3102726340293884,
+              "wrist_depth_max_m": 0.37308621406555176,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            },
+            "optimized": {
+              "reprojection_rmse_px": 6.115383757919527,
+              "wrist_acceleration_rms_m_per_frame2": 0.0002513896324671805,
+              "wrist_step_max_m": 0.003867120249196887,
+              "wrist_change_from_wilor_rms_m": 0.0033531561493873596,
+              "joint_depth_min_m": 0.28052425384521484,
+              "joint_depth_max_m": 0.4263973534107208,
+              "wrist_depth_min_m": 0.31402698159217834,
+              "wrist_depth_max_m": 0.36845335364341736,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            }
+          }
+        },
+        "elapsed_seconds": 62.71616325667128,
+        "observed_frames": {
+          "left": 448,
+          "right": 445
+        },
+        "note": "Camera-relative optimization prototype. Data terms exclude flagged observations; smoothness/BMC/depth also constrain inferred frames. Review before retargeting."
+      },
+      "run.json": {
+        "source": "reports/outputs/01_track",
+        "total_available_frames": 450,
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "frames": 450,
+        "complete_clip": true,
+        "gaps": {
+          "left": [
+            [
+              45,
+              46
+            ],
+            [
+              144,
+              145
+            ]
+          ],
+          "right": [
+            [
+              14,
+              15
+            ],
+            [
+              58,
+              60
+            ],
+            [
+              100,
+              101
+            ],
+            [
+              155,
+              156
+            ]
+          ]
+        },
+        "K": [
+          [
+            692.82666015625,
+            0.0,
+            644.6431884765625
+          ],
+          [
+            0.0,
+            692.4537963867188,
+            365.76177978515625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "coordinate_frame": "OpenCV RGB camera-relative proxy, not a recovered world frame",
+        "camera_motion_estimated": false,
+        "sam3_mask_gate_applied": true,
+        "translation_convention": "DynHaMR pre-mirror translation: negate left X relative to WiLoR pinhole translation",
+        "schema": "pkdata.dynhamr.camera_relative.v1",
+        "status": "succeeded",
+        "profile": "ego2robot_a1_local_adaptation_v1",
+        "upstream_revision": "fa9cd7412c205fd15ee4139c8caacf79bf6167e6",
+        "exact_paper_reproduction": false,
+        "world_trajectory_recovered": false,
+        "metric_depth_validated": false,
+        "hmp_applied": false,
+        "depth_constraint_type": "soft penalty",
+        "depth_target": "wrist",
+        "initial_gap_interpolation": true,
+        "final_gap_interpolation": false,
+        "loss_implementation": "Local A.1 adapter with recorded weights; upstream MANO, scene, stage parameter sets, LBFGS and BMC",
+        "code_sha256": {
+          "refine_dynhamr.py": "e852f12b7d8cc91a792a2c34057f66d51e7cd47d4a79b794f13111631bdaeadf",
+          "dynhamr_adapter.py": "6f6bc4bc50bf4fe5335d1dc3994f93b687a3a402eb565bf76b50fd9ad63e830e",
+          "dynhamr_a1_loss.py": "d18dcb125fc09ee29d21883ba869683217c6e6cd06021e4626013b7cdc30929e"
+        },
+        "dynhamr_applied": true,
+        "frames_optimized": 450,
+        "all_outputs_finite": true,
+        "mano_mapping": {
+          "left": {
+            "compared_frames": 450,
+            "max_abs_joint_error_m": 7.450580596923828e-08
+          },
+          "right": {
+            "compared_frames": 450,
+            "max_abs_joint_error_m": 7.078051567077637e-08
+          },
+          "upstream_translation_max_error_m": 2.9802322387695312e-08
+        },
+        "phases": {
+          "root_fit": {
+            "initial_loss": 0.9317265152931213,
+            "requested_iterations": 30,
+            "final_loss": 0.14269182085990906,
+            "completed_iterations": 30
+          },
+          "smooth_fit": {
+            "initial_loss": 0.16975006461143494,
+            "requested_iterations": 100,
+            "final_loss": 0.10627494752407074,
+            "completed_iterations": 100
+          }
+        },
+        "metrics": {
+          "left": {
+            "wilor": {
+              "reprojection_rmse_px": 10.532205312537627,
+              "wrist_acceleration_rms_m_per_frame2": 0.00426334235817194,
+              "wrist_step_max_m": 0.01212820690125227,
+              "wrist_change_from_wilor_rms_m": 0.0,
+              "joint_depth_min_m": 0.26318252086639404,
+              "joint_depth_max_m": 0.4643317461013794,
+              "wrist_depth_min_m": 0.3079913556575775,
+              "wrist_depth_max_m": 0.40507006645202637,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [
+                111,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                128,
+                129
+              ],
+              "depth_violation_max_m": 0.00507006049156189
+            },
+            "shared_shape_initialization": {
+              "reprojection_rmse_px": 10.532606209345138,
+              "wrist_acceleration_rms_m_per_frame2": 0.004212115425616503,
+              "wrist_step_max_m": 0.00870570819824934,
+              "wrist_change_from_wilor_rms_m": 6.576885061804205e-05,
+              "joint_depth_min_m": 0.26314494013786316,
+              "joint_depth_max_m": 0.46428051590919495,
+              "wrist_depth_min_m": 0.307989239692688,
+              "wrist_depth_max_m": 0.40507155656814575,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [
+                111,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                128,
+                129
+              ],
+              "depth_violation_max_m": 0.005071550607681274
+            },
+            "optimized": {
+              "reprojection_rmse_px": 5.2749826789449275,
+              "wrist_acceleration_rms_m_per_frame2": 0.00026666451594792306,
+              "wrist_step_max_m": 0.004615785088390112,
+              "wrist_change_from_wilor_rms_m": 0.0035649894271045923,
+              "joint_depth_min_m": 0.26744478940963745,
+              "joint_depth_max_m": 0.46060970425605774,
+              "wrist_depth_min_m": 0.30704525113105774,
+              "wrist_depth_max_m": 0.3999919593334198,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            }
+          },
+          "right": {
+            "wilor": {
+              "reprojection_rmse_px": 14.082819313103968,
+              "wrist_acceleration_rms_m_per_frame2": 0.004722821991890669,
+              "wrist_step_max_m": 0.01459331065416336,
+              "wrist_change_from_wilor_rms_m": 0.0,
+              "joint_depth_min_m": 0.2761625647544861,
+              "joint_depth_max_m": 0.42853522300720215,
+              "wrist_depth_min_m": 0.3102785348892212,
+              "wrist_depth_max_m": 0.3730895519256592,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            },
+            "shared_shape_initialization": {
+              "reprojection_rmse_px": 14.08343521520544,
+              "wrist_acceleration_rms_m_per_frame2": 0.004397246986627579,
+              "wrist_step_max_m": 0.008517984300851822,
+              "wrist_change_from_wilor_rms_m": 7.687632023589686e-05,
+              "joint_depth_min_m": 0.27618157863616943,
+              "joint_depth_max_m": 0.4287393093109131,
+              "wrist_depth_min_m": 0.3102726340293884,
+              "wrist_depth_max_m": 0.37308621406555176,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            },
+            "optimized": {
+              "reprojection_rmse_px": 6.115383757919527,
+              "wrist_acceleration_rms_m_per_frame2": 0.0002513896324671805,
+              "wrist_step_max_m": 0.003867120249196887,
+              "wrist_change_from_wilor_rms_m": 0.0033531561493873596,
+              "joint_depth_min_m": 0.28052425384521484,
+              "joint_depth_max_m": 0.4263973534107208,
+              "wrist_depth_min_m": 0.31402698159217834,
+              "wrist_depth_max_m": 0.36845335364341736,
+              "depth_target": "wrist",
+              "frames_outside_depth_range": [],
+              "depth_violation_max_m": 0.0
+            }
+          }
+        },
+        "elapsed_seconds": 62.71616325667128,
+        "observed_frames": {
+          "left": 448,
+          "right": 445
+        },
+        "note": "Camera-relative optimization prototype. Data terms exclude flagged observations; smoothness/BMC/depth also constrain inferred frames. Review before retargeting."
+      }
+    },
+    "02_targets": {
+      "summary.json": {
+        "schema": "pkdata.retarget.camera_relative.v1",
+        "source": "reports/outputs/01_dynhamr",
+        "frames": 450,
+        "fps": 30.0,
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "complete_clip": true,
+        "coordinate_frame": "OpenCV RGB camera-relative proxy, not a recovered world frame",
+        "metric_depth_validated": false,
+        "world_trajectory_recovered": false,
+        "robot_embodiment_applied": false,
+        "ik_applied": false,
+        "exact_paper_reproduction": false,
+        "hands": {
+          "left": {
+            "observed_frames": 448,
+            "gap_interpolated_frames": [
+              45,
+              144
+            ],
+            "orientation_held_frames": [],
+            "velocity_replaced_frames": [],
+            "raw": {
+              "tcp_max_step_mm": 17.15335962706356,
+              "tcp_acceleration_rms_mm_per_frame2": 5.416283756654243,
+              "rotation_max_step_deg": 16.688953750767382,
+              "rotation_step_rms_deg": 3.8824311888512977,
+              "width_acceleration_rms_mm_per_frame2": 1.6166510086105235,
+              "width_min_max_mm": [
+                23.388777510149453,
+                69.6113668387512
+              ]
+            },
+            "smoothed": {
+              "tcp_max_step_mm": 9.333849248553554,
+              "tcp_acceleration_rms_mm_per_frame2": 0.4693474340825255,
+              "rotation_max_step_deg": 2.9194478731787523,
+              "rotation_step_rms_deg": 0.9871191873419122,
+              "width_acceleration_rms_mm_per_frame2": 0.14451805026988512,
+              "width_min_max_mm": [
+                25.55653347315046,
+                67.83070130939231
+              ]
+            },
+            "tcp_change_rms_mm": 3.026036274561659,
+            "rotation_change_rms_deg": 5.173355427881659
+          },
+          "right": {
+            "observed_frames": 445,
+            "gap_interpolated_frames": [
+              14,
+              58,
+              59,
+              100,
+              155
+            ],
+            "orientation_held_frames": [],
+            "velocity_replaced_frames": [
+              332
+            ],
+            "raw": {
+              "tcp_max_step_mm": 17.99965329275601,
+              "tcp_acceleration_rms_mm_per_frame2": 5.94617789095427,
+              "rotation_max_step_deg": 20.881822483958036,
+              "rotation_step_rms_deg": 4.757112644748904,
+              "width_acceleration_rms_mm_per_frame2": 1.718232433372033,
+              "width_min_max_mm": [
+                27.458693351258884,
+                112.72798153614629
+              ]
+            },
+            "smoothed": {
+              "tcp_max_step_mm": 6.8400622669807385,
+              "tcp_acceleration_rms_mm_per_frame2": 0.5247412748814394,
+              "rotation_max_step_deg": 4.516643733694046,
+              "rotation_step_rms_deg": 1.431182548660703,
+              "width_acceleration_rms_mm_per_frame2": 0.2073257764710872,
+              "width_min_max_mm": [
+                28.879416326437887,
+                111.02451049475658
+              ]
+            },
+            "tcp_change_rms_mm": 3.264268172396573,
+            "rotation_change_rms_deg": 7.331072017792684
+          }
+        },
+        "metric_note": "Roughness and target changes measure temporal behavior, not accuracy against ground truth.",
+        "status": "succeeded",
+        "preview_generated": true
+      },
+      "validation.json": {
+        "left": {
+          "all_finite": true,
+          "rotation_orthogonality_max_error": 8.881784197001252e-16,
+          "rotation_determinant_max_error": 1.1102230246251565e-15,
+          "quaternion_matrix_max_error": 0.0,
+          "gap_position_max_error_m": 0.0,
+          "gap_rotation_max_error_rad": 0.0,
+          "gap_width_max_error_m": 0.0,
+          "passed": true
+        },
+        "right": {
+          "all_finite": true,
+          "rotation_orthogonality_max_error": 1.1102230246251565e-15,
+          "rotation_determinant_max_error": 1.3322676295501878e-15,
+          "quaternion_matrix_max_error": 0.0,
+          "gap_position_max_error_m": 0.0,
+          "gap_rotation_max_error_rad": 0.0,
+          "gap_width_max_error_m": 0.0,
+          "passed": true
+        },
+        "video": {
+          "width": 2560,
+          "height": 720,
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "passed": true
+      }
+    },
+    "03_prepared": {
+      "summary.json": {
+        "schema": "pkdata.arm_shadow_masks.v1",
+        "status": "succeeded",
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "resolution_wh": [
+          1280,
+          720
+        ],
+        "fps": 30.0,
+        "original_arm_preserved": true,
+        "frames_without_added_shadow": [
+          198,
+          199
+        ],
+        "frames_with_large_addition": [],
+        "mask_sha256": {
+          "arm": "b787ae9ee407682977b57564150774f339c966fe914eb61a642037a50a709a0d",
+          "shadow": "c03dafce384b41c6312931b99a6c217b2afcc8b758e46e8c4e3b91f24a2f9c91",
+          "merged": "8f8b190d08c59064c2dcbbd86214e3ae8d3d1fb280e7ea7440e78db30e282e15"
+        },
+        "digest_definition": "ordered filename bytes + boolean mask bytes",
+        "visual_quality_review": "pending; semantic shadow recognition and heuristic association are unverified",
+        "videos": {
+          "arm_vs_arm_shadow.mp4": {
+            "width": 2560,
+            "height": 784,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "450"
+          },
+          "mask_overlay.mp4": {
+            "width": 1280,
+            "height": 784,
+            "avg_frame_rate": "30/1",
+            "nb_read_frames": "450"
+          }
+        }
+      },
+      "manifest.json": {
+        "status": "prepared_not_inferred",
+        "source_mask_run": "reports/outputs/03_prepared",
+        "source_arm_run": "reports/outputs/03_arm",
+        "source_shadow_run": "reports/outputs/03_shadow",
+        "clip": "$CLIP",
+        "prompt": "arm + spatially filtered shadow",
+        "frames": 450,
+        "fps": 30.0,
+        "resolution_wh": [
+          1280,
+          720
+        ],
+        "rgb_directory": "reports/outputs/03_prepared/rgb",
+        "mask_directory": "reports/outputs/03_prepared/masks",
+        "start_frame": 0,
+        "end_frame_exclusive": 450,
+        "visual_quality_review": "pending"
+      },
+      "run.json": {
+        "status": "succeeded",
+        "output": "reports/outputs/03_prepared",
+        "visual_quality_review": "pending"
+      }
+    },
+    "04_inpaint": {},
+    "05_robot": {
+      "summary.json": {
+        "status": "succeeded",
+        "quality_status": "geometry_and_visibility_accepted",
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "geometry_valid_frames": 450,
+        "paper_style_valid_frames": 443,
+        "strict_valid_frames": 271,
+        "self_collision_frames": 0,
+        "cross_collision_frames": 0,
+        "camera_keepout_collision_frames": 0,
+        "joint_jump_frames": [],
+        "joint_max_step_rad": 0.1262405090223272,
+        "robot_area_ratio_max": 0.43203993055555556,
+        "robot_area_ratio_mean": 0.3765181905864198,
+        "workspace_arm_area_ratio_max": 0.10573932711337292,
+        "minimum_robot_clearance_m": 0.011047259703137904,
+        "minimum_camera_clearance_m": 0.04,
+        "minimum_gripper_visible_pixels": {
+          "left": 12743,
+          "right": 13683
+        },
+        "hands": {
+          "left": {
+            "converged_frames": 450,
+            "position_error_max_mm": 0.0091962815153248,
+            "rotation_error_max_deg": 0.0005714263805712451,
+            "width_clipped_frames": 0
+          },
+          "right": {
+            "converged_frames": 450,
+            "position_error_max_mm": 0.009539224729059955,
+            "rotation_error_max_deg": 0.0005669241997521089,
+            "width_clipped_frames": 177
+          }
+        },
+        "selected_pair": {
+          "left_rank": 2,
+          "right_rank": 2,
+          "left_candidate": 2131,
+          "right_candidate": 3159,
+          "accepted": true,
+          "passed_frames": 450,
+          "reject_reason": null,
+          "paper_score_sum": 1.9485909654192066,
+          "max_robot_area_ratio": 0.43203993055555556,
+          "mean_robot_area_ratio": 0.3765181905864198,
+          "max_workspace_arm_area_ratio": 0.10573932711337292
+        },
+        "elapsed_seconds": 367.580966303125,
+        "metric_depth_validated": false,
+        "world_trajectory_recovered": false,
+        "quality_note": "All frames pass robot geometry/visibility constraints. Input metric scale, inferred hand frames and clipped gripper widths retain separate flags; no claim of validated physical demonstrations."
+      },
+      "manifest.json": {
+        "schema": "pkdata.stage5.constrained.v2",
+        "status": "succeeded",
+        "config": {
+          "robot": "dual_franka_emika_panda",
+          "model_xml": "repos/mujoco_menagerie/franka_emika_panda/panda.xml",
+          "search_radius_m": 0.8,
+          "tcp_in_hand_m": [
+            0.0,
+            0.0,
+            0.1029
+          ],
+          "rotation_hand_from_gripper": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "maximum_gripper_width_m": 0.08,
+          "home_qpos": [
+            0,
+            0,
+            0,
+            -1.57079,
+            0,
+            1.57079,
+            -0.7853,
+            0.04,
+            0.04
+          ],
+          "camera_world": "OpenCV_X_right_Y_down_Z_forward",
+          "base_rotation_convention": "inward_horizontal_X_camera_up_Z_then_local_extrinsic_xyz_roll_pitch_yaw",
+          "lateral_reach_multipliers": [
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.8,
+            1.0,
+            1.2
+          ],
+          "forward_reach_multipliers": [
+            -0.1,
+            0.0,
+            0.1,
+            0.3,
+            0.5,
+            0.7,
+            0.9
+          ],
+          "vertical_reach_multipliers": [
+            0.4,
+            0.2,
+            0.0,
+            -0.2,
+            -0.4
+          ],
+          "pitch_degrees": [
+            30,
+            45,
+            60
+          ],
+          "yaw_degrees": [
+            -45,
+            -20,
+            0,
+            20,
+            45
+          ],
+          "roll_degrees": [
+            -15,
+            0,
+            15
+          ],
+          "minimum_camera_distance_m": 0.2,
+          "maximum_trajectory_reach_ratio": 0.9,
+          "minimum_trajectory_base_distance_m": 0.08,
+          "keyframes_max": 20,
+          "ik": {
+            "solver": "quadprog",
+            "iterations": 100,
+            "tolerance": 1e-05
+          },
+          "top_candidates_per_arm": 5,
+          "collision_clearance_m": 0.003,
+          "collision_detection_distance_m": 0.04,
+          "camera_keepout_radius_m": 0.16,
+          "maximum_joint_step_rad": 0.15,
+          "posture_cost": 0.001,
+          "single_arm_max_area_ratio": 0.25,
+          "maximum_robot_area_ratio": 0.45,
+          "maximum_workspace_arm_area_ratio": 0.12,
+          "minimum_gripper_pixels": 60,
+          "workspace_margin_pixels": 20,
+          "search_render_scale": 0.5,
+          "seed_joint1_offsets_rad": [
+            0.0,
+            -1.2,
+            1.2
+          ]
+        },
+        "frames_requested": 450,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "K": [
+          [
+            346.413330078125,
+            0.0,
+            322.32159423828125
+          ],
+          [
+            0.0,
+            346.2268981933594,
+            182.88088989257812
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "target_dir": "reports/outputs/02_targets",
+        "background_dir": "reports/outputs/04_inpaint",
+        "target_sha256": {
+          "left": "523b70341f55347a5fa1dcdd7d6c43b00c3d9c33e98dd5a22e12804e6df80f5e",
+          "right": "8919ab32d658a8cfa65258eb2f557e07eabeeed5bf5e6d99a2746f0002fd82ec"
+        },
+        "background_mapping_sha256": "79e9e03a828070e332db21718b3cd3211622ff84658f5aa0d07ef6a94489fc95",
+        "background_manifest": {
+          "status": "prepared_not_inferred",
+          "source_mask_run": "reports/outputs/03_prepared",
+          "source_arm_run": "reports/outputs/03_arm",
+          "source_shadow_run": "reports/outputs/03_shadow",
+          "clip": "$CLIP",
+          "prompt": "arm + spatially filtered shadow",
+          "frames": 450,
+          "fps": 30.0,
+          "resolution_wh": [
+            1280,
+            720
+          ],
+          "rgb_directory": "reports/outputs/03_prepared/rgb",
+          "mask_directory": "reports/outputs/03_prepared/masks",
+          "start_frame": 0,
+          "end_frame_exclusive": 450,
+          "visual_quality_review": "pending"
+        },
+        "code_sha256": {
+          "check.py": "6bd49659accbb44981fb5f666243fff088bf40cabb456a96e66bd737593b78d4",
+          "check_pipeline.py": "215224ef74361ba7923e8e447ae68825ba27b2f1146344cfdc81a8c04efda4c6",
+          "check_production.py": "b693f313915a2ce876a445f27470ca192dd997014effa412433aa19b9d5fcbb9",
+          "collision_distance.py": "a0f06fe8f5df4b0b25f2258f8ac409b5baf549d3941075a5ef1553b764838129",
+          "constrained_ik.py": "5c9a4a97010f62babed309f465575bd25ac94b21ff590bd7a5244b7b1de9e759",
+          "ik.py": "d9d0c4543639bc984420cb964ec50d918d4cbf455b8b9d2ec057a44496b65c58",
+          "production_search.py": "55ad2de30d723000563afebabef04d88c2731c6ec0f45ed9167af1da45e2192d",
+          "production_validation.py": "3e3652aea9b836937cdcca268e8bbbc1e7a0bd853d51f5364d12ac926c5557c8",
+          "robot_scene.py": "63d860c3ddb5bbeda174c8f0fd27bea1f631f8433c2bd262505ce1e20c292588",
+          "run_pipeline.py": "0621c60859c6faeb6b9597254fc32772f10766d82b8a9657e1cc8d3c5d1894db",
+          "run_production.py": "3a7765b93ccc9453cbe13e5a7553c2fd2941f2db54befba9b4d72dc58bae0ebf"
+        },
+        "source_camera": {
+          "rgb": {
+            "stream_type": 2,
+            "format": 5,
+            "width": 1280,
+            "height": 720,
+            "fps": 30,
+            "intrinsics": {
+              "fx": 692.82666015625,
+              "fy": 692.4537963867188,
+              "cx": 644.6431884765625,
+              "cy": 365.76177978515625
+            },
+            "distortion_model": 4,
+            "distortion_orbbec_k1_k2_k3_k4_k5_k6_p1_p2": [
+              0.00688266521319747,
+              -0.04895118996500969,
+              0.03324592486023903,
+              0.0,
+              0.0,
+              0.0,
+              0.00024046744510997087,
+              0.0009908953215926886
+            ],
+            "rotation_matrix_row_major": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "translation_mm": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "stream_type": 3,
+            "format": 8,
+            "width": 848,
+            "height": 480,
+            "fps": 30,
+            "intrinsics": {
+              "fx": 406.4677429199219,
+              "fy": 406.4677429199219,
+              "cx": 422.6750183105469,
+              "cy": 243.3125
+            },
+            "distortion_model": 3,
+            "distortion_orbbec_k1_k2_k3_k4_k5_k6_p1_p2": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rotation_matrix_row_major": [
+              0.9999963641166687,
+              6.164846126921475e-06,
+              -0.0026942549739032984,
+              -1.8281735947311972e-06,
+              0.9999986886978149,
+              0.0016095993341878057,
+              0.0026942614931613207,
+              -0.0016095886239781976,
+              0.9999950528144836
+            ],
+            "translation_mm": [
+              -14.127456665039062,
+              0.0060690417885780334,
+              -1.98008131980896
+            ]
+          },
+          "disparity": {
+            "baseline_mm": 50.89690017700195,
+            "fx": 406.4677429199219,
+            "bit_size": 14,
+            "unit": 1.0,
+            "invalid_disparity": 0,
+            "pack_mode": 2
+          },
+          "device": {
+            "name": "Gemini 335",
+            "full_name": "Orbbec Gemini 335",
+            "firmware_version": "1.4.60",
+            "hardware_version": "0.1",
+            "connection_type": "USB3.2"
+          },
+          "coordinate_note": "Both depth streams retain their native 848x480 depth-camera grid; they are not resampled into the RGB grid."
+        },
+        "camera_distortion_applied": false,
+        "coordinate_frame": "OpenCV RGB camera-relative proxy, not a recovered world frame",
+        "metric_depth_validated": false,
+        "world_trajectory_recovered": false,
+        "scene_object_collision_checked": false,
+        "exact_paper_reproduction": false,
+        "full_paper_candidate_grid": true,
+        "depth_occlusion_applied": false,
+        "depth_convention": "float32 optical-axis Z, model meters; +inf outside robot",
+        "part_labels": {
+          "0": "background",
+          "1": "left_arm",
+          "2": "left_gripper",
+          "3": "right_arm",
+          "4": "right_gripper"
+        },
+        "search_cache": "reports/outputs/05_robot/search",
+        "search_fingerprint": "4d571db2b5acfc12e384c4189b9c2020b60d6182d338ee590e764a6ac3022fc8",
+        "frames_processed": 450,
+        "robot_geometry_accepted": true,
+        "workspace_box": [
+          237,
+          70,
+          453,
+          201
+        ],
+        "selected_camera_from_base": {
+          "left": [
+            [
+              0.10000000000000012,
+              0.9899494936611665,
+              0.10000000000000014,
+              -0.35506137897344753
+            ],
+            [
+              0.7071067811865475,
+              5.551115123125783e-17,
+              -0.7071067811865475,
+              -0.34827688122255823
+            ],
+            [
+              -0.6999999999999998,
+              0.14142135623730978,
+              -0.7,
+              0.5758773156716523
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "right": [
+            [
+              -0.7399050472278982,
+              0.6125234496876854,
+              -0.2781286476963119,
+              0.4540729873619957
+            ],
+            [
+              0.5,
+              0.22414386804201336,
+              -0.8365163037378079,
+              -0.36377010119275954
+            ],
+            [
+              -0.4500450211775279,
+              -0.7580069590721856,
+              -0.47210690411331235,
+              0.4222802534812932
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      }
+    },
+    "06_composite": {
+      "summary.json": {
+        "status": "succeeded",
+        "frames_processed": 450,
+        "available_frames": 450,
+        "complete_clip": true,
+        "frames_with_gripper_occlusion": 187,
+        "occluded_gripper_pixels_min_max": [
+          0,
+          1196
+        ],
+        "occluded_fraction_of_gripper_max": 0.036974062509660864,
+        "visible_robot_area_ratio_max": 0.43203125,
+        "scene_depth_min_max_m": [
+          0.20269542932510376,
+          1.263741135597229
+        ],
+        "geometry_valid_frames_from_stage5": 450,
+        "strict_valid_frames_from_stage5": 271,
+        "metric_conversion_verified": true,
+        "physical_scale_validated": false,
+        "temporal_depth_optimization_applied": false,
+        "visual_quality_accepted": false,
+        "peak_cuda_allocated_gib": 2.6330418586730957,
+        "elapsed_seconds": 118.0203113607131,
+        "note": "Numerical completion only. Model-predicted meters and camera-relative robot placement require physical scale validation. Upstream inpainting and hand/width quality flags remain."
+      },
+      "validation.json": {
+        "status": "passed",
+        "frames_verified": 450,
+        "source_hashes_verified": true,
+        "identities_and_timestamps_verified": true,
+        "occlusion_and_background_pixels_verified": true,
+        "video_streams": {
+          "composite": {
+            "width": 640,
+            "height": 360,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          },
+          "comparison": {
+            "width": 1280,
+            "height": 392,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          },
+          "scene_depth_preview": {
+            "width": 640,
+            "height": 392,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          },
+          "occlusion_overlay": {
+            "width": 640,
+            "height": 392,
+            "avg_frame_rate": "30/1",
+            "duration": "15.000000",
+            "nb_read_frames": "450"
+          }
+        },
+        "physical_scale_validated": false,
+        "visual_quality_accepted": false
+      },
+      "manifest.json": {
+        "schema": "pkdata.stage6.depth_composite.v1",
+        "status": "succeeded",
+        "robot_dir": "reports/outputs/05_robot",
+        "background_dir": "reports/outputs/04_inpaint",
+        "human_mask_dir": "reports/outputs/03_arm",
+        "clip": "$CLIP",
+        "source_manifest_sha256": "aae265820da87dbc6459a622df085db9ca07388d09d7c186397ea35c0ba1ac52",
+        "source_alignment_sha256": "43df1d73b9566a206720d99bfa1dffba568f064bd87d8d9c889619acf2f793b8",
+        "checkpoint": "workflow/step_six_DepthAnything3_and_Composite/assets/DA3METRIC-LARGE",
+        "model_config_sha256": "a336f3e76fe375aaae17a9aed9130c9f2aa061535d317ec57dcb2f1f02e1dd53",
+        "checkpoint_sha256": "bbea5b0b3ee389849cffa7ddae89de064a90abd2b055fc5aa99aac68db324776",
+        "code_sha256": {
+          "check.py": "4103e4c414e4c0f9a388f2724f847c9c34caa497a9947ae562953734efb878ae",
+          "check_model.py": "916e676c1a967472e8481f1751e7918859cab880730dd1b9bf4b39908aa1d489",
+          "check_pipeline.py": "3c45186bb72c375c382fa8b39796d5b1bea3d10155cec306e609cdde6b648e89",
+          "composite.py": "e598c674945c5160543527178f4939e9cf43805a65f576f9ba4483708603016f",
+          "inspect_depth_scale.py": "7f55b59c39ffccc035246c41d86023de53fe839af31666169f5494a6ac63091b",
+          "metric_depth.py": "3e8ff72f467475f65eb9151cc7a4a1b7a9d7b52ccb35a6e41ca7798718be4e66",
+          "pipeline_io.py": "3e04ea331bba9d5472ea824d92e05db3d2e3e900056024867c5e6fc12da48d16",
+          "run_pipeline.py": "3f75c493fb4b76a9eda7ece52174b725e41a6a70e4259e84c3d660b5c27254be"
+        },
+        "frame_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288,
+          289,
+          290,
+          291,
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310,
+          311,
+          312,
+          313,
+          314,
+          315,
+          316,
+          317,
+          318,
+          319,
+          320,
+          321,
+          322,
+          323,
+          324,
+          325,
+          326,
+          327,
+          328,
+          329,
+          330,
+          331,
+          332,
+          333,
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349,
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373,
+          374,
+          375,
+          376,
+          377,
+          378,
+          379,
+          380,
+          381,
+          382,
+          383,
+          384,
+          385,
+          386,
+          387,
+          388,
+          389,
+          390,
+          391,
+          392,
+          393,
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414,
+          415,
+          416,
+          417,
+          418,
+          419,
+          420,
+          421,
+          422,
+          423,
+          424,
+          425,
+          426,
+          427,
+          428,
+          429,
+          430,
+          431,
+          432,
+          433,
+          434,
+          435,
+          436,
+          437,
+          438,
+          439,
+          440,
+          441,
+          442,
+          443,
+          444,
+          445,
+          446,
+          447,
+          448,
+          449
+        ],
+        "fps": 30.0,
+        "output_wh": [
+          640,
+          360
+        ],
+        "K_output": [
+          [
+            346.413330078125,
+            0.0,
+            322.32159423828125
+          ],
+          [
+            0.0,
+            346.2268981933594,
+            182.88088989257812
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K_original": [
+          [
+            692.82666015625,
+            0.0,
+            644.6431884765625
+          ],
+          [
+            0.0,
+            692.4537963867188,
+            365.76177978515625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "depth_source": "original_rgb",
+        "process_res": 1008,
+        "process_res_method": "upper_bound_resize",
+        "depth_resize": "bilinear",
+        "depth_convention": "optical-axis Z, predicted meters",
+        "scene_depth_scale_multiplier": 1.0,
+        "metric_conversion": "raw_depth * mean(processed_fx, processed_fy) / 300",
+        "physical_scale_validated": false,
+        "camera_distortion_applied": false,
+        "temporal_depth_optimization_applied": false,
+        "human_mask_resize": "nearest",
+        "human_mask_dilation": {
+          "kernel": [
+            5,
+            5
+          ],
+          "iterations": 1,
+          "grid_wh": [
+            640,
+            360
+          ]
+        },
+        "rule": "arm always visible; hide gripper when scene Z < robot Z outside dilated pure ARM mask",
+        "references": [
+          "https://arxiv.org/html/2608.02580v1#A4",
+          "https://github.com/ByteDance-Seed/Depth-Anything-3#-faq"
+        ],
+        "frames_processed": 450,
+        "complete_clip": true,
+        "video_fps": 30.0,
+        "sparse_keyframe_slideshow": false
+      }
+    }
+  },
+  "physical_scale_validated": false,
+  "world_trajectory_recovered": false,
+  "intermediate_video_validation": {
+    "status": "passed",
+    "videos_verified": 23,
+    "expected_frames": 450,
+    "expected_fps": 30,
+    "videos": [
+      {
+        "stage": "03_arm",
+        "path": "reports/outputs/03_arm/mask_overlay.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_arm",
+        "path": "reports/outputs/03_arm/mask_comparison.mp4",
+        "width": 3840,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_arm",
+        "path": "reports/outputs/03_arm/mask_binary.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "01_wilor",
+        "path": "reports/outputs/01_wilor/keypoints_preview.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_shadow",
+        "path": "reports/outputs/03_shadow/mask_overlay.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_shadow",
+        "path": "reports/outputs/03_shadow/mask_comparison.mp4",
+        "width": 3840,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_shadow",
+        "path": "reports/outputs/03_shadow/mask_binary.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "01_dynhamr",
+        "path": "reports/outputs/01_dynhamr/comparison.mp4",
+        "width": 2560,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "01_dynhamr",
+        "path": "reports/outputs/01_dynhamr/hand_pose_overlay.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "02_targets",
+        "path": "reports/outputs/02_targets/comparison.mp4",
+        "width": 2560,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "02_targets",
+        "path": "reports/outputs/02_targets/retarget_overlay.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_prepared",
+        "path": "reports/outputs/03_prepared/arm_vs_arm_shadow.mp4",
+        "width": 2560,
+        "height": 784,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_prepared",
+        "path": "reports/outputs/03_prepared/mask_overlay.mp4",
+        "width": 1280,
+        "height": 784,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "03_prepared",
+        "path": "reports/outputs/03_prepared/mask_binary.mp4",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "04_inpaint",
+        "path": "reports/outputs/04_inpaint/comparison.mp4",
+        "width": 1280,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "04_inpaint",
+        "path": "reports/outputs/04_inpaint/rgb/masked_in.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "04_inpaint",
+        "path": "reports/outputs/04_inpaint/rgb/inpaint_out.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/robot_overlay.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/comparison.mp4",
+        "width": 1280,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/robot_rgb.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/robot_mask.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/gripper_mask.mp4",
+        "width": 640,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      },
+      {
+        "stage": "05_robot",
+        "path": "reports/outputs/05_robot/robot_depth_preview.mp4",
+        "width": 752,
+        "height": 360,
+        "avg_frame_rate": "30/1",
+        "nb_read_frames": "450",
+        "status": "passed"
+      }
+    ]
+  },
+  "overall_status": {
+    "started_Asia_Shanghai": "2026-10-19T15:46:40.903505+08:00",
+    "project": "$PROJECT",
+    "test_root": "$TEST_ROOT",
+    "input_rgb_frames": 450,
+    "status": "all_six_stages_and_checks_completed",
+    "full_clip_required": true,
+    "environments_ready": 7,
+    "finished": "2026-10-19T16:35:45.824291+08:00",
+    "acceptance_report_complete": true,
+    "intermediate_videos_verified": 23,
+    "final_videos_verified": 4,
+    "source_file_hashes_verified": 3600,
+    "sampled_visual_review_completed": true,
+    "visual_quality_accepted": false,
+    "physical_scale_validated": false,
+    "world_trajectory_recovered": false,
+    "strict_valid_frames": 271,
+    "right_width_clipped_frames": 177,
+    "acceptance_finished_Asia_Shanghai": "2026-10-19T16:46:31.246565+08:00"
+  },
+  "sampled_visual_review": {
+    "reviewed_Asia_Shanghai": "2026-10-19T16:43:05.907898+08:00",
+    "review_type": "sampled image review, not whole-video visual acceptance",
+    "contact_sheet_frames": [
+      0,
+      58,
+      150,
+      225,
+      325,
+      449
+    ],
+    "scene_depth_preview_frames_reviewed": [
+      0
+    ],
+    "contact_sheet": "reports/reports/visual_review/six_stages_contact_sheet.jpg",
+    "observations": [
+      "The sampled stages remain visually synchronized: hand pose, gripper targets, ARM masks, inpainted scene, robot rendering and final composite.",
+      "Visible hand/shadow ghosting and local blur remain in ProPainter backgrounds, including parts of the interaction area. These artifacts remain in the composite.",
+      "Robot rendering satisfies the configured quantitative constraints; physical scale and real scene object collisions have not been validated.",
+      "DA3 depth preview contains structured scene/hand depth. It is estimated from RGB, not measured sensor depth."
+    ],
+    "visual_quality_accepted": false,
+    "physical_scale_validated": false,
+    "world_trajectory_recovered": false
+  },
+  "viewing_video_exports": {
+    "scope": "Viewing copies for completed steps 1--5",
+    "frames": 450,
+    "fps": 30,
+    "frame_alignment_verified": true,
+    "generated_count": 10,
+    "videos": [
+      {
+        "label": "Stage 1 refined hand pose",
+        "path": "reports/outputs/01_dynhamr/hand_pose_overlay.mp4",
+        "inputs": [
+          {
+            "path": "reports/outputs/01_dynhamr/comparison.mp4",
+            "sha256": "f4ec52299bef527ca3ce97f8283a4e821b954c1f620c54fc372fdbcbca9295cf",
+            "panel": "right"
+          }
+        ],
+        "note": "Extracted the result side from an existing comparison video; labels, frame order, and camera projection are retained.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "b84879ec9344cb4896b7dd9521bd81ca0f902aea30a4d3901187b219d928d1f4",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-i",
+          "reports/outputs/01_dynhamr/comparison.mp4",
+          "-vf",
+          "crop=1280:720:1280:0",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/01_dynhamr/hand_pose_overlay.partial.mp4"
+        ]
+      },
+      {
+        "label": "Stage 2 smoothed gripper targets",
+        "path": "reports/outputs/02_targets/retarget_overlay.mp4",
+        "inputs": [
+          {
+            "path": "reports/outputs/02_targets/comparison.mp4",
+            "sha256": "e6a4137e246b707e0dd0ce8415713106e220be26ff470eca1ea8e18c28878671",
+            "panel": "right"
+          }
+        ],
+        "note": "Extracted the result side from an existing comparison video; labels, frame order, and camera projection are retained.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "c2841af8ea49076f658a531cd15156afe5c8db11175a9c5117e8b504f3ce3906",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-i",
+          "reports/outputs/02_targets/comparison.mp4",
+          "-vf",
+          "crop=1280:720:1280:0",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/02_targets/retarget_overlay.partial.mp4"
+        ]
+      },
+      {
+        "label": "Stage 3 ARM binary mask",
+        "path": "reports/outputs/03_arm/mask_binary.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/03_arm/masks",
+            "pattern": "frame_%06d.png",
+            "frames": 450,
+            "sequence_sha256": "cfd1b7a3b422e910cf9fc79e6fc9b93a52802bdd0da757488884e5a3ed66aced",
+            "binary_source": true
+          }
+        ],
+        "note": "White is the mask; black is background. Original PNG masks are retained. Shadow results remain experimental.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "b99c2d05dd4392ca52ed4a3b42d2be699977b3a9c7963fd78173e29536e87a90",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/03_arm/masks/frame_%06d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/03_arm/mask_binary.partial.mp4"
+        ]
+      },
+      {
+        "label": "Stage 3 SHADOW candidate binary mask",
+        "path": "reports/outputs/03_shadow/mask_binary.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/03_shadow/masks",
+            "pattern": "frame_%06d.png",
+            "frames": 450,
+            "sequence_sha256": "0353f7bff0ba0b1426892f6b76a81c67ad5137ac72353a087e38304903b95792",
+            "binary_source": true
+          }
+        ],
+        "note": "White is the mask; black is background. Original PNG masks are retained. Shadow results remain experimental.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "325b6aa4059d322d546915e323aa29e2a189cf2ce53e1aed08f87dae3ff041be",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/03_shadow/masks/frame_%06d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/03_shadow/mask_binary.partial.mp4"
+        ]
+      },
+      {
+        "label": "Stage 3 merged ARM+SHADOW binary mask",
+        "path": "reports/outputs/03_prepared/mask_binary.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/03_prepared/masks",
+            "pattern": "frame_%06d.png",
+            "frames": 450,
+            "sequence_sha256": "b6fd015a4ad86e1a7fb12395e88ce85131a81145adaea7e45f650f37052d33cc",
+            "binary_source": true
+          }
+        ],
+        "note": "White is the mask; black is background. Original PNG masks are retained. Shadow results remain experimental.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "c90772883a1abfb811d5afbd008327c5f569620248666456db661e052a476edb",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/03_prepared/masks/frame_%06d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/03_prepared/mask_binary.partial.mp4"
+        ]
+      },
+      {
+        "label": "Step 4 Source vs. inpainted comparison",
+        "path": "reports/outputs/04_inpaint/comparison.mp4",
+        "inputs": [
+          {
+            "directory": "$CLIP/rgb/frames",
+            "pattern": "frame_%06d.jpg",
+            "frames": 450,
+            "sequence_sha256": "80e9e350de7aaecbd84bbbab7ba2959bf67047913b1e52b0de251066467ce484",
+            "binary_source": false
+          },
+          {
+            "directory": "reports/outputs/04_inpaint/rgb/frames",
+            "pattern": "%04d.png",
+            "frames": 450,
+            "sequence_sha256": "65387f4343ece883016da6fda41287603a848a6905aab5b8043caefe721d2537",
+            "binary_source": false
+          }
+        ],
+        "note": "Left: downsampled source RGB. Right: ProPainter output for the arm+shadow mask.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 360,
+          "pix_fmt": "yuvj420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "8b7f1528d9439b8f6bd9f0e8022e819ed6f65e3d71e006a620e5952755f80866",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-i",
+          "$CLIP/rgb/frames/frame_%06d.jpg",
+          "-framerate",
+          "30",
+          "-i",
+          "reports/outputs/04_inpaint/rgb/frames/%04d.png",
+          "-filter_complex",
+          "[0:v]scale=640:360:flags=area,setsar=1[a];[1:v]setsar=1[b];[a][b]hstack=inputs=2[v]",
+          "-map",
+          "[v]",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/04_inpaint/comparison.partial.mp4"
+        ]
+      },
+      {
+        "label": "Step 5 Robot-only render",
+        "path": "reports/outputs/05_robot/robot_rgb.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/05_robot/robot_rgb",
+            "pattern": "%04d.png",
+            "frames": 450,
+            "sequence_sha256": "465c5b8f023298cab436898dbe945bfcd01ae58df17e21eb5e2d4379cf3b8097",
+            "binary_source": false
+          }
+        ],
+        "note": "",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "433d0d94352ad7b7b7035618f95def8ea2971650d6f2f6ad56c38c951464c2be",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/05_robot/robot_rgb/%04d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/05_robot/robot_rgb.partial.mp4"
+        ]
+      },
+      {
+        "label": "Step 5 Robot binary mask",
+        "path": "reports/outputs/05_robot/robot_mask.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/05_robot/robot_mask",
+            "pattern": "%04d.png",
+            "frames": 450,
+            "sequence_sha256": "de17092e9a1b561d5634dcd63e46915d6935a891f909670ac6e0cd6d2638507c",
+            "binary_source": true
+          }
+        ],
+        "note": "",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "cf054a1b613e8dabbd5cb22fa068ea2b03a27cbbb5738dbadbaa4877a92bc8e4",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/05_robot/robot_mask/%04d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/05_robot/robot_mask.partial.mp4"
+        ]
+      },
+      {
+        "label": "Step 5 Gripper binary mask",
+        "path": "reports/outputs/05_robot/gripper_mask.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/05_robot/gripper_mask",
+            "pattern": "%04d.png",
+            "frames": 450,
+            "sequence_sha256": "01d6d4cfa78708694127e89af0f8f3ab8c3cd35c95cab85dd2f43164e077adb4",
+            "binary_source": true
+          }
+        ],
+        "note": "",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 640,
+          "height": 360,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "6d37b11557758693e07c859c437b5c40d3f3f660bd4b750ec68f90c47c772a79",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-framerate",
+          "30",
+          "-start_number",
+          "0",
+          "-i",
+          "reports/outputs/05_robot/gripper_mask/%04d.png",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "0",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/05_robot/gripper_mask.partial.mp4"
+        ]
+      },
+      {
+        "label": "Step 5 Robot depth preview",
+        "path": "reports/outputs/05_robot/robot_depth_preview.mp4",
+        "inputs": [
+          {
+            "directory": "reports/outputs/05_robot/robot_depth",
+            "key": "depth_m",
+            "sequence_sha256": "d4c88e528eb383a256ded0bb30e0d1798d9d842d9a1a5ea3c657fd0570b2d98f",
+            "global_color_range_m": [
+              0.1,
+              0.5
+            ],
+            "data_min_max_m": [
+              0.1439296007156372,
+              0.45886117219924927
+            ]
+          }
+        ],
+        "note": "Fixed full-clip color range: near red, far blue; black means no robot. The right 112 pixels are legend. Values are model metric Z; physical scale is not validated. Use original NPZ files for quantitative work.",
+        "visualization_only": true,
+        "script_sha256": "9d0c5ca8b9347384c5e0359a6c47b7b49bc4734ce80849e24bc637b8bc35afda",
+        "action": "generated",
+        "stream": {
+          "codec_name": "h264",
+          "width": 752,
+          "height": 360,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1",
+          "duration": "15.000000",
+          "nb_read_frames": "450"
+        },
+        "output_sha256": "2889a752581f22fa751f2988fab804ef61c4b9651520fcc49c528be00ece0deb",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-nostdin",
+          "-n",
+          "-f",
+          "rawvideo",
+          "-pixel_format",
+          "bgr24",
+          "-video_size",
+          "752x360",
+          "-framerate",
+          "30",
+          "-i",
+          "pipe:0",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "4",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "reports/outputs/05_robot/robot_depth_preview.partial.mp4"
+        ]
+      }
+    ],
+    "quantitative_sources": "PNG masks and NPZ depth remain the computational inputs"
+  }
+}

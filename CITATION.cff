@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this reproduction, cite the paper and this repository."
+title: "Ego2Robot Open Reproduction"
+type: software
+authors:
+  - family-names: "Liu"
+    given-names: "Yanming"
+    alias: "aownown"
+repository-code: "https://github.com/aownown/ego2robot-repro"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-10-22
+references:
+  - type: article
+    title: "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data"
+    authors:
+      - family-names: "Wang"
+        given-names: "Ye"
+      - family-names: "Lin"
+        given-names: "Pei"
+      - family-names: "Chen"
+        given-names: "Xiong-Hui"
+    year: 2026
+    identifiers:
+      - type: arxiv
+        value: "2608.02580"
+    url: "https://arxiv.org/abs/2608.02580"

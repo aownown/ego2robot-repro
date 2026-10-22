@@ -1,0 +1,37 @@
+[
+  {
+    "stage": "step_two_Retarget_and_Smooth",
+    "freeze_files": [
+      "step_two_Retarget_and_Smooth/logs/retarget-pip-freeze.txt"
+    ],
+    "check_log": "step_two_Retarget_and_Smooth/logs/check.log"
+  },
+  {
+    "stage": "step_three_SAM3",
+    "freeze_files": [
+      "step_three_SAM3/logs/sam3-pip-freeze.txt"
+    ],
+    "check_log": "step_three_SAM3/logs/check.log"
+  },
+  {
+    "stage": "step_four_ProPainter",
+    "freeze_files": [
+      "step_four_ProPainter/logs/propainter-pip-freeze.txt"
+    ],
+    "check_log": "step_four_ProPainter/logs/check.log"
+  },
+  {
+    "stage": "step_five_MuJoCo_and_mink",
+    "freeze_files": [
+      "step_five_MuJoCo_and_mink/logs/mujoco_mink-pip-freeze.txt"
+    ],
+    "check_log": "step_five_MuJoCo_and_mink/logs/check.log"
+  },
+  {
+    "stage": "step_six_DepthAnything3_and_Composite",
+    "freeze_files": [
+      "step_six_DepthAnything3_and_Composite/logs/da3-pip-freeze.txt"
+    ],
+    "check_log": "step_six_DepthAnything3_and_Composite/logs/check.log"
+  }
+]

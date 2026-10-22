@@ -1,0 +1,25 @@
+name: CPU checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install minimal test dependencies
+        run: python -m pip install "numpy>=1.24,<3" "scipy>=1.10,<2" pyyaml
+      - name: Repository contract
+        run: python tools/repo_check.py
+      - name: Python syntax
+        run: python -m compileall -q workflow test_data/_test1019/scripts tools
+      - name: CPU smoke tests
+        run: bash tests/smoke.sh

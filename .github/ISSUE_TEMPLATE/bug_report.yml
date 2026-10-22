@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible pipeline or documentation defect
+title: "[bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What failed?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command and stage
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, GPU, driver, Python/Conda environments, and pinned revisions.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed credentials, private paths, and identifiable footage from the report.
+          required: true

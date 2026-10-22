@@ -1,0 +1,92 @@
+{
+  "checked_utc": "2026-10-19T07:52:36.564849Z",
+  "input_manifest": {
+    "schema": "litchi.rgbd_clip.v1",
+    "status": "succeeded",
+    "created_at_utc": "2026-09-10T08:54:56.721101+00:00",
+    "source_directory": "external_capture/litchi_data-nsl-extracted/camera_1_rgb_depth_001",
+    "source_video": "external_capture/litchi_data-nsl-extracted/camera_1_rgb_depth_001/rgb/rgb_mjpeg.mp4",
+    "clip": {
+      "time_basis": "source_mp4_constant_frame_rate",
+      "start_seconds_inclusive": 6,
+      "end_seconds_exclusive": 21,
+      "source_rgb_frame_start": 180,
+      "source_rgb_frame_end_exclusive": 630,
+      "frames": 450,
+      "first_rgb_header_timestamp_ns": 92636719000,
+      "last_rgb_header_timestamp_ns": 107621307000
+    },
+    "rgb_video": {
+      "codec_name": "mjpeg",
+      "width": 1280,
+      "height": 720,
+      "avg_frame_rate": "30/1",
+      "duration": "15.000000",
+      "nb_read_frames": "450"
+    },
+    "rgb_jpegs_verified_against_source": true,
+    "video_packets_verified_against_source_jpegs": true,
+    "video_full_decode_passed": true,
+    "depth_matching": {
+      "method": "nearest_header_timestamp",
+      "max_allowed_delta_ns": 5000000
+    },
+    "depth_streams": {
+      "depth_original": {
+        "frames": 450,
+        "unique_source_frames": 450,
+        "source_frame_first": 180,
+        "source_frame_last": 629,
+        "shape_per_frame": [
+          480,
+          848
+        ],
+        "dtype": "uint16",
+        "npz_array_key": "depth",
+        "chunk_frames": [
+          120,
+          120,
+          120,
+          90
+        ],
+        "median_depth_minus_rgb_timestamp_ns": 147000.0,
+        "max_absolute_depth_minus_rgb_timestamp_ns": 266000,
+        "sha256_selected_raw_values": "c7082ba7f64e870a5fb895a261d3784a8c58d22206518d7788375642c33f7bcc",
+        "all_values_verified_equal_to_source": true
+      },
+      "depth_nsl": {
+        "frames": 450,
+        "unique_source_frames": 450,
+        "source_frame_first": 180,
+        "source_frame_last": 629,
+        "shape_per_frame": [
+          480,
+          848
+        ],
+        "dtype": "uint16",
+        "npz_array_key": "depth",
+        "chunk_frames": [
+          120,
+          120,
+          120,
+          90
+        ],
+        "median_depth_minus_rgb_timestamp_ns": 147000.0,
+        "max_absolute_depth_minus_rgb_timestamp_ns": 266000,
+        "sha256_selected_raw_values": "042a27c824ca4d36c004c760afc6cf6162e72d9c00624c3a7e10afcc20c7bacd",
+        "all_values_verified_equal_to_source": true
+      }
+    },
+    "depth_units": "unconfirmed raw sensor/disparity units; no conversion applied",
+    "depth_aligned_to_rgb": false,
+    "camera_parameters_copied_verbatim": true,
+    "camera_parameters_sha256": "606ef353559b0a99bb0f7de5a16bf29c0bfef63e87a2d5438724cbbb2c20b707",
+    "numpy_version": "2.4.4"
+  },
+  "sha256_returncode": 0,
+  "sha256_entries": 468,
+  "environment_initial": {
+    "os": "NAME=\"Ubuntu\"\nVERSION=\"20.04.6 LTS (Focal Fossa)\"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME=\"Ubuntu 20.04.6 LTS\"\nVERSION_ID=\"20.04\"\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nVERSION_CODENAME=focal\nUBUNTU_CODENAME=focal\n",
+    "gpu": "index, name, driver_version, memory.total [MiB]\n0, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n1, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n2, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n3, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n4, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n5, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n6, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n7, NVIDIA A100-SXM4-40GB, 580.126.20, 40960 MiB\n"
+  }
+}

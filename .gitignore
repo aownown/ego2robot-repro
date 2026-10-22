@@ -1,0 +1,51 @@
+# Environments and dependency caches
+**/envs/
+**/repos/
+**/__pycache__/
+.venv/
+*.py[cod]
+.conda/
+.pytest_cache/
+.ruff_cache/
+.cache/
+cache/
+
+# Weights, generated data, local logs
+**/assets/
+**/downloads/
+**/outputs/
+**/logs/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.pkl
+*.npz
+*.npy
+*.part
+
+# Source data; retain small schemas and manifests only
+test_data/rgb/
+test_data/depth_original/
+test_data/depth_nsl/
+test_data/provenance/
+
+# Secrets and local configuration
+.env
+*.token
+*.secret
+.vscode/
+.idea/
+.DS_Store
+
+# Keep documented media and contact sheet
+
+# Do not publish real-scene video or frame media by default
+*.mp4
+*.mov
+*.avi
+*.webm
+
+# Two curated, code-documentation frames are allowed
+!docs/images/
+!docs/images/*.jpg

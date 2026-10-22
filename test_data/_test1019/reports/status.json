@@ -1,0 +1,21 @@
+{
+  "started_Asia_Shanghai": "2026-10-19T15:46:40.903505+08:00",
+  "project": "$PROJECT",
+  "test_root": "$TEST_ROOT",
+  "input_rgb_frames": 450,
+  "status": "all_six_stages_and_checks_completed",
+  "full_clip_required": true,
+  "environments_ready": 7,
+  "finished": "2026-10-19T16:35:45.824291+08:00",
+  "acceptance_report_complete": true,
+  "intermediate_videos_verified": 23,
+  "final_videos_verified": 4,
+  "source_file_hashes_verified": 3600,
+  "sampled_visual_review_completed": true,
+  "visual_quality_accepted": false,
+  "physical_scale_validated": false,
+  "world_trajectory_recovered": false,
+  "strict_valid_frames": 271,
+  "right_width_clipped_frames": 177,
+  "acceptance_finished_Asia_Shanghai": "2026-10-19T16:46:31.246565+08:00"
+}

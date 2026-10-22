@@ -1,0 +1,5 @@
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1785888127/work
+PyYAML==6.0.2
+scipy==1.14.1

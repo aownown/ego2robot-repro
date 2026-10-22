@@ -1,0 +1,14 @@
+{
+  "all_seven_installed": true,
+  "pip_check_passed": true,
+  "environments": {
+    "env_mujoco_mink": "0",
+    "env_retarget": "0",
+    "env_da3": "0",
+    "env_propainter": "0",
+    "env_sam3": "0",
+    "env_wilor": "0",
+    "env_dynhamr": "0"
+  },
+  "notes": "Per-environment pip checks and first-step CUDA computation passed; full pipeline validation is separate."
+}

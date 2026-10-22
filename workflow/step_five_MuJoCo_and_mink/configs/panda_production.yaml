@@ -1,0 +1,38 @@
+# Full Appendix A.4 candidate grid plus explicit local acceptance constraints.
+# Robot/camera metric calibration remains a separate provenance flag.
+robot: dual_franka_emika_panda
+model_xml: repos/mujoco_menagerie/franka_emika_panda/panda.xml
+search_radius_m: 0.8
+tcp_in_hand_m: [0.0, 0.0, 0.1029]
+rotation_hand_from_gripper: [[0, 1, 0], [0, 0, 1], [1, 0, 0]]
+maximum_gripper_width_m: 0.08
+home_qpos: [0, 0, 0, -1.57079, 0, 1.57079, -0.7853, 0.04, 0.04]
+camera_world: OpenCV_X_right_Y_down_Z_forward
+base_rotation_convention: inward_horizontal_X_camera_up_Z_then_local_extrinsic_xyz_roll_pitch_yaw
+lateral_reach_multipliers: [0.3, 0.4, 0.5, 0.6, 0.8, 1.0, 1.2]
+forward_reach_multipliers: [-0.1, 0.0, 0.1, 0.3, 0.5, 0.7, 0.9]
+vertical_reach_multipliers: [0.4, 0.2, 0.0, -0.2, -0.4]
+pitch_degrees: [30, 45, 60]
+yaw_degrees: [-45, -20, 0, 20, 45]
+roll_degrees: [-15, 0, 15]
+minimum_camera_distance_m: 0.20
+maximum_trajectory_reach_ratio: 0.9
+minimum_trajectory_base_distance_m: 0.08
+keyframes_max: 20
+ik: {solver: quadprog, iterations: 100, tolerance: 0.00001}
+top_candidates_per_arm: 5
+collision_clearance_m: 0.003
+collision_detection_distance_m: 0.04
+camera_keepout_radius_m: 0.16
+maximum_joint_step_rad: 0.15
+posture_cost: 0.001
+single_arm_max_area_ratio: 0.25
+maximum_robot_area_ratio: 0.45
+# Fixed wrist geometry alone occupies 10.7% of this trajectory-derived ROI near
+# frame 343; 12% permits that unavoidable wrist footprint, with no proximal arm
+# crossing the workspace. Whole-frame robot coverage is independently <=45%.
+maximum_workspace_arm_area_ratio: 0.12
+minimum_gripper_pixels: 60
+workspace_margin_pixels: 20
+search_render_scale: 0.5
+seed_joint1_offsets_rad: [0.0, -1.2, 1.2]

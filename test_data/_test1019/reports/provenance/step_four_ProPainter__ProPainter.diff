@@ -1,0 +1,19 @@
+diff --git a/inference_propainter.py b/inference_propainter.py
+index 4d7f92f..a4d9f2a 100644
+--- a/inference_propainter.py
++++ b/inference_propainter.py
+@@ -468,9 +468,10 @@ if __name__ == '__main__':
+     # save videos frame
+     masked_frame_for_save = [cv2.resize(f, out_size) for f in masked_frame_for_save]
+     comp_frames = [cv2.resize(f, out_size) for f in comp_frames]
+-    imageio.mimwrite(os.path.join(save_root, 'masked_in.mp4'), masked_frame_for_save, fps=fps, quality=7)
+-    imageio.mimwrite(os.path.join(save_root, 'inpaint_out.mp4'), comp_frames, fps=fps, quality=7)
++    # Preserve output geometry (e.g. 640x360); imageio otherwise scales height to 368.
++    imageio.mimwrite(os.path.join(save_root, 'masked_in.mp4'), masked_frame_for_save, fps=fps, quality=7, macro_block_size=1)
++    imageio.mimwrite(os.path.join(save_root, 'inpaint_out.mp4'), comp_frames, fps=fps, quality=7, macro_block_size=1)
+
+     print(f'\nAll results are saved in {save_root}')
+
+-    torch.cuda.empty_cache()
+\ No newline at end of file
++    torch.cuda.empty_cache()

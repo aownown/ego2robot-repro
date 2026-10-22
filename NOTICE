@@ -1,0 +1,11 @@
+Ego2Robot Open Reproduction
+Copyright 2026 Liu Yanming (@aownown)
+
+This repository is an independent engineering reproduction inspired by
+"Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data"
+(arXiv:2608.02580). It is not the official implementation.
+
+The repository contains original orchestration, adapters, checks, and
+documentation. Upstream model source, weights, datasets, and render assets are
+fetched separately from their official providers and remain governed by their
+own licenses. See THIRD_PARTY.md for citations and distribution boundaries.

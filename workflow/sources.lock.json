@@ -1,0 +1,64 @@
+{
+  "repositories": [
+    {
+      "path": "step_five_MuJoCo_and_mink/repos/mink",
+      "url": "https://github.com/kevinzakka/mink.git",
+      "revision": "ab45779fea46933832dee1c240f94103633347a1"
+    },
+    {
+      "path": "step_five_MuJoCo_and_mink/repos/mujoco_menagerie",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie.git",
+      "revision": "8161bba264d7fa7c99ca301e91e7fb44737676ad"
+    },
+    {
+      "path": "step_four_ProPainter/repos/ProPainter",
+      "url": "https://github.com/sczhou/ProPainter.git",
+      "revision": "e870e79321c31b733e2031af5aa2fb1fe3ac7eec"
+    },
+    {
+      "path": "step_one_WiLoR_and_DynHaMR/repos/Dyn-HaMR",
+      "url": "https://github.com/ZhengdiYu/Dyn-HaMR.git",
+      "revision": "fa9cd7412c205fd15ee4139c8caacf79bf6167e6"
+    },
+    {
+      "path": "step_one_WiLoR_and_DynHaMR/repos/Hand-BMC-pytorch",
+      "url": "https://github.com/MengHao666/Hand-BMC-pytorch.git",
+      "revision": "d9d1a5394ebc84079e9fc25885122c18a9ec1505"
+    },
+    {
+      "path": "step_one_WiLoR_and_DynHaMR/repos/WiLoR",
+      "url": "https://github.com/rolpotamias/WiLoR.git",
+      "revision": "fcb911312a38fa8badd30d9656a167485d61b8f9"
+    },
+    {
+      "path": "step_six_DepthAnything3_and_Composite/repos/Depth-Anything-3",
+      "url": "https://github.com/ByteDance-Seed/Depth-Anything-3.git",
+      "revision": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4"
+    },
+    {
+      "path": "step_three_SAM3/repos/sam3",
+      "url": "https://github.com/facebookresearch/sam3.git",
+      "revision": "660a5e9e1b8b4c02c0ad97229b88a09a6e4ff5b7"
+    }
+  ],
+  "huggingface": [
+    {
+      "repo": "facebook/sam3",
+      "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+      "files": [
+        "sam3.pt"
+      ],
+      "local_asset": "step_three_SAM3/assets/sam3/sam3.pt",
+      "note": "current host reuses existing checkpoint; local SHA256, not asserted to match remote revision"
+    },
+    {
+      "repo": "depth-anything/DA3METRIC-LARGE",
+      "revision": "4010e39f3634a45bc60553321fb49fb760bd594e",
+      "files": [
+        "config.json",
+        "model.safetensors"
+      ]
+    }
+  ],
+  "propainter_release": "https://github.com/sczhou/ProPainter/releases/tag/v0.1.0"
+}

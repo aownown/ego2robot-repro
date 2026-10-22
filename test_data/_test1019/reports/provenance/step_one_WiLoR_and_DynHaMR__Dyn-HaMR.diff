@@ -1,0 +1,6 @@
+diff --git a/third-party/vipe b/third-party/vipe
+--- a/third-party/vipe
++++ b/third-party/vipe
+@@ -1 +1 @@
+-Subproject commit fdc79359ec6d063c86b9d203ca3d7054a9636823
++Subproject commit fdc79359ec6d063c86b9d203ca3d7054a9636823-dirty

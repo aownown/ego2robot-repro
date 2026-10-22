@@ -1,0 +1,24 @@
+# Proposed Python 3.10 compatibility baseline; validate after installation.
+# NumPy 1.23 retains aliases used by the legacy MANO/Chumpy stack.
+numpy==1.23.5
+scipy==1.10.1
+pandas==1.5.3
+opencv-python==4.10.0.84
+matplotlib==3.7.5
+Pillow==10.4.0
+smplx==0.1.28
+pyrender==0.1.45
+trimesh==3.23.5
+hydra-core==1.3.2
+omegaconf==2.3.0
+einops==0.8.0
+yacs==0.1.8
+gdown==5.2.0
+# Required to deserialize the official WiLoR detector checkpoint.
+dill==0.3.8
+tqdm
+PyYAML
+imageio
+imageio-ffmpeg
+joblib
+loguru

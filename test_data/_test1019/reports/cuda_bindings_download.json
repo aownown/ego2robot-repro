@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "cuda_bindings-12.9.4-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 12210593,
+    "seconds": 2.8,
+    "sha256": "c912a3d9e6b6651853eed8eed96d6800d69c08e94052c292fec3f282c5a817c9",
+    "official_pypi_hash_verified": true
+  },
+  {
+    "filename": "cuda_bindings-12.9.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "bytes": 12151019,
+    "seconds": 2.8,
+    "sha256": "fda147a344e8eaeca0c6ff113d2851ffca8f7dfc0a6c932374ee5c47caa649c8",
+    "official_pypi_hash_verified": true
+  }
+]

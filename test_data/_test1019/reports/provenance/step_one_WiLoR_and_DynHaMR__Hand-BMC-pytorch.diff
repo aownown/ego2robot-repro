@@ -1,0 +1,16 @@
+diff --git a/__pycache__/config.cpython-37.pyc b/__pycache__/config.cpython-37.pyc
+deleted file mode 100644
+index b4cc40c..0000000
+Binary files a/__pycache__/config.cpython-37.pyc and /dev/null differ
+diff --git a/utils/__pycache__/__init__.cpython-37.pyc b/utils/__pycache__/__init__.cpython-37.pyc
+deleted file mode 100644
+index ad85fe3..0000000
+Binary files a/utils/__pycache__/__init__.cpython-37.pyc and /dev/null differ
+diff --git a/utils/__pycache__/calculate_Joint_angles.cpython-37.pyc b/utils/__pycache__/calculate_Joint_angles.cpython-37.pyc
+deleted file mode 100644
+index b66880b..0000000
+Binary files a/utils/__pycache__/calculate_Joint_angles.cpython-37.pyc and /dev/null differ
+diff --git a/utils/__pycache__/hull.cpython-37.pyc b/utils/__pycache__/hull.cpython-37.pyc
+deleted file mode 100644
+index da9f92f..0000000
+Binary files a/utils/__pycache__/hull.cpython-37.pyc and /dev/null differ
